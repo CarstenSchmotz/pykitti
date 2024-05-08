@@ -10,7 +10,8 @@ __author__ = "Lee Clement"
 __email__ = "lee.clement@robotics.utias.utoronto.ca"
 
 # Change this to the directory where you store KITTI data
-basedir = '/Users/leeclement/Desktop/KITTI/odometry/dataset'
+#basedir = '/Users/leeclement/Desktop/KITTI/odometry/dataset'
+#basedir = '/Users/carstenschmotz/Desktop/kittydata/2011_09_26
 
 # Specify the dataset to load
 sequence = '04'
