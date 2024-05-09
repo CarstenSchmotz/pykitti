@@ -68,7 +68,7 @@ def transform_from_rot_trans(R, t):
 def read_calib_file(filepath):
     """Read in a calibration file and parse into a dictionary."""
     data = {}
-
+    print(filepath)
     with open(filepath, 'r') as f:
         for line in f.readlines():
             try:
