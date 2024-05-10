@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-#import cv2
+import cv2
 
 '''
 def load_velo_scan(file):
@@ -84,6 +84,11 @@ R_velo_to_cam = load_velo_to_cam(file_path_R_velo_to_cam)
 R_rect = load_R_rect(file_path_R_rect)
 P_rect = load_P_rect(file_path_P_rect)
 
+output_folder = r'D:\Dokumente\01_BA_Git\pykitti\ausgabe'  # Pfad zum Ausgabefolder
+
+# Erstellen des Ausgabefolders, falls er nicht existiert
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 # Durchlaufen der Binärdateien im Ordner
 for filename in os.listdir(folder_path):
     if filename.endswith(".bin"):
@@ -91,72 +96,25 @@ for filename in os.listdir(folder_path):
         
         # Transformation der Velodyne-Scandaten
         transformed_scan = transform_velo_scan(file_path, R_velo_to_cam, R_rect, P_rect)
+         
+        # Konvertieren Sie die transformierten Punktwolkenkoordinaten in Pixelkoordinaten
+        scale_factor = 0.1  # Beispiel-Skalierungsfaktor
+        pixel_coords = ((transformed_scan[:, :2] - transformed_scan[:, :2].min(axis=0)) * scale_factor).astype(int)
+
+        # Erstellen Sie ein leeres Bild
+        image_width =  1242# Beispiel-Bildbreite
+        image_height = 375  # Beispiel-Bildhöhe
         
-        # Erstellen von Lidar-Bildern
-        # Normalisieren der Punktwolke, um sie auf das Bild zu mappen (zum Beispiel auf das Intervall [0, 255])
+        lidar_image = np.zeros((image_height, image_width), dtype=np.uint8)
+
+        # Zeichnen Sie die Punkte auf das Bild
+        for pixel_coord in pixel_coords:
+            x, y = pixel_coord
+            if 0 <= x < image_width and 0 <= y < image_height:
+                lidar_image[y, x] = 255  # Markieren Sie das Pixel
+
+        # Speichern Sie das Bild im Ausgabefolder
+        output_filename = os.path.join(output_folder, filename.replace('.bin', '.png'))  # Ändern Sie die Dateierweiterung
+        cv2.imwrite(output_filename, lidar_image)
         
-
-        ###
-        '''
-        # Annahme: Bildgröße
-        image_width = 1242#1920
-        image_height = 375#1080
-
-        # Annahme: Projektionsmatrix für die Kamera (P_rect_xx)
-        P_rect_00 = np.array([[7.070912e+02, 0.000000e+00, 6.018873e+02, 4.688783e-03],
-                            [0.000000e+00, 7.070912e+02, 1.831104e+02, -3.335363e-03],
-                            [0.000000e+00, 0.000000e+00, 1.000000e+00, 3.535533e-01]])
-
-        # Bild erstellen
-        image = np.zeros((image_height, image_width), dtype=np.uint8)
-
-        # Punkte zeichnen
-        for point in transformed_scan:
-            # Punkt in homogenen Koordinaten
-            point_homogeneous = np.array([point[0], point[1], point[2], 1])
-
-            # Transformation in Bildkoordinaten
-            point_image = P_rect_00.dot(point_homogeneous)
-
-            # Normierung
-            point_image_normalized = point_image / point_image[2]
-
-            # Pixelkoordinaten
-            pixel_x = int(point_image_normalized[0])
-            pixel_y = int(point_image_normalized[1])
-
-            # Punkt auf das Bild zeichnen (weißer Punkt)
-            if 0 <= pixel_x < image_width and 0 <= pixel_y < image_height:
-                image[pixel_y, pixel_x] = 255
-
-        # Bild anzeigen
-        cv2.imshow("Lidar-Bild", image)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()'''
-        
-        # Erstelle ein 2D-Bild von x und y Koordinaten, wobei z als Farbkanal verwendet wird
-        x = transformed_scan[:, 0]
-        y = transformed_scan[:, 1]
-        z = transformed_scan[:, 2]
-        plt.figure(figsize=(10, 6))
-        plt.scatter(x, y, c=z, cmap='viridis')
-        plt.xlabel('X')
-        plt.ylabel('Y')
-        plt.title('Lidar-Scan')
-        plt.colorbar(label='Z-Koordinate')
-        plt.gca().set_aspect('equal', adjustable='box')
-        plt.show()
-        
-        '''normalized_scan = transformed_scan - np.min(transformed_scan, axis=0)
-        normalized_scan /= np.max(normalized_scan, axis=0)
-        normalized_scan *= 255
-        
-        # Erstellen des Bildes
-        lidar_image = normalized_scan[:, :3].astype(np.uint8)  # Nur die ersten drei Spalten (x, y, z) verwenden
-        lidar_image = lidar_image.reshape((-1, 4))  # In ein Bildformat umformen
-        
-        # Anzeige oder Speicherung des Lidar-Bildes
-        plt.imshow(lidar_image)
-        plt.axis('off')
-        plt.savefig(filename[:-4] + "_lidar_image.png", bbox_inches='tight', pad_inches=0)
-        plt.show()'''
+       
