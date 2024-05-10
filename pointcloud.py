@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+import cv2
 
 '''
 def load_velo_scan(file):
@@ -95,10 +96,42 @@ for filename in os.listdir(folder_path):
         # Normalisieren der Punktwolke, um sie auf das Bild zu mappen (zum Beispiel auf das Intervall [0, 255])
         
 
-        # Extrahiere x, y und z Koordinaten aus dem transformierten Scan
-        x = transformed_scan[:, 0]
-        y = transformed_scan[:, 1]
-        z = transformed_scan[:, 2]
+        
+        # Annahme: Bildgröße
+        image_width = 1242#1920
+        image_height = 375#1080
+
+        # Annahme: Projektionsmatrix für die Kamera (P_rect_xx)
+        P_rect_00 = np.array([[7.070912e+02, 0.000000e+00, 6.018873e+02, 4.688783e-03],
+                            [0.000000e+00, 7.070912e+02, 1.831104e+02, -3.335363e-03],
+                            [0.000000e+00, 0.000000e+00, 1.000000e+00, 3.535533e-01]])
+
+        # Bild erstellen
+        image = np.zeros((image_height, image_width), dtype=np.uint8)
+
+        # Punkte zeichnen
+        for point in transformed_scan:
+            # Punkt in homogenen Koordinaten
+            point_homogeneous = np.array([point[0], point[1], point[2], 1])
+
+            # Transformation in Bildkoordinaten
+            point_image = P_rect_00.dot(point_homogeneous)
+
+            # Normierung
+            point_image_normalized = point_image / point_image[2]
+
+            # Pixelkoordinaten
+            pixel_x = int(point_image_normalized[0])
+            pixel_y = int(point_image_normalized[1])
+
+            # Punkt auf das Bild zeichnen (weißer Punkt)
+            if 0 <= pixel_x < image_width and 0 <= pixel_y < image_height:
+                image[pixel_y, pixel_x] = 255
+
+        # Bild anzeigen
+        cv2.imshow("Lidar-Bild", image)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
         '''
         # Erstelle ein 2D-Bild von x und y Koordinaten, wobei z als Farbkanal verwendet wird
         plt.figure(figsize=(10, 6))
