@@ -43,18 +43,27 @@ def transform_velo_scan(scan_file, R_velo_to_cam, R_rect, P_rect):
     X = np.hstack((scan[:, :3], np.ones((scan.shape[0], 1))))  
     Y = np.dot(P_rect, np.dot(R_rect, np.dot(R_velo_to_cam, X.T))).T
     return Y[:, :3]  
+os = 1 #windows = 1, mac=0
+if os==1:
+    folder_path = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\velodyne_points\data"
 
-folder_path = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\velodyne_points\data"
+    file_path_R_velo_to_cam = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\calib_velo_to_cam.txt"
+    file_path_R_rect = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\calib_cam_to_cam.txt"
+    file_path_P_rect = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\calib_cam_to_cam.txt"
+    output_folder = r'D:\Dokumente\01_BA_Git\pykitti\ausgabe'
 
-file_path_R_velo_to_cam = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\calib_velo_to_cam.txt"
-file_path_R_rect = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\calib_cam_to_cam.txt"
-file_path_P_rect = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\calib_cam_to_cam.txt"
+else:
+    folder_path = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/data"
+    file_path_R_velo_to_cam = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/calib_velo_to_cam.txt"
+    file_path_R_rect = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/calib_cam_to_cam.txt"
+    file_path_P_rect = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/calib_cam_to_cam.txt"
+    output_folder = "/Users/carstenschmotz/Documents/GitHub/pykitti/ausgabe"
+
 
 R_velo_to_cam = load_velo_to_cam(file_path_R_velo_to_cam)
 R_rect = load_R_rect(file_path_R_rect)
 P_rect = load_P_rect(file_path_P_rect)
 
-output_folder = r'D:\Dokumente\01_BA_Git\pykitti\ausgabe'
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
