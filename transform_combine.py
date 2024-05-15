@@ -1,6 +1,6 @@
 import os
 import cv2
-
+#Programm to add two pictures into one horizontally
 def concatenate_images(folder1, folder2, output_folder):
     filenames1 = os.listdir(folder1)
     filenames2 = os.listdir(folder2)
