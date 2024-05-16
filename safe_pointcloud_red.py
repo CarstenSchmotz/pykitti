@@ -88,33 +88,7 @@ for filename in os.listdir(folder_path):
         image_width = 1242
         image_height = 375  
         lidar_image = np.zeros((image_height, image_width, 3), dtype=np.uint8)  # RGB-Bild
-        '''
-        # Färben der Punkte basierend auf Intensitäten
-        for pixel_coord, intensity in zip(pixel_coords, intensity_data):
-            x, y = pixel_coord
-            if 0 <= x < image_width and 0 <= y < image_height:
-                # Farbgebung basierend auf der Intensität
-                if intensity == 0:
-                    color = (0, 0, 0)  # Schwarz für fehlende Intensitäten
-                elif intensity < 0.25:
-                    color = (0, 0, int(255 * intensity * 4))  # Blau für niedrige Intensitäten
-                elif intensity < 0.5:
-                    color = (0, int(255 * (intensity - 0.25) * 4), 255)  # Gelb für mittlere Intensitäten
-                else:
-                    color = (int(255 * (intensity - 0.5) * 2), 0, 0)  # Rot für hohe Intensitäten
-                
-                lidar_image[y, x] = color  # Setze den Pixelwert auf die entsprechende Farbe
         
-        # Färben der Punkte basierend auf Intensitäten
-        for pixel_coord, intensity in zip(pixel_coords, intensity_data):
-            x, y = pixel_coord
-            if 0 <= x < image_width and 0 <= y < image_height:
-                # Farbgebung basierend auf der Intensität
-                color = (int(intensity * 255), int(intensity * 255), int(intensity * 255))  # Graustufenwert
-                lidar_image[y, x] = color  # Setze den Pixelwert auf die entsprechende Farbe
-        output_filename = os.path.join(output_folder, filename.replace('.bin', '.png'))
-        cv2.imwrite(output_filename, lidar_image)
-    '''
          # Färben der Punkte basierend auf Intensitäten
         for pixel_coord, intensity in zip(pixel_coords, intensity_data):
             x, y = pixel_coord
