@@ -32,7 +32,7 @@ def load_R_rect(filepath):
 def load_P_rect(filepath):
     with open(filepath, 'r') as f:
         lines = f.readlines()
-        P_line = [float(x) for x in lines[9].strip().split()[1:]]
+        P_line = [float(x) for x in lines[p_rec_choice].strip().split()[1:]]
         P_rect = np.array(P_line).reshape(3, 4)
     return P_rect
 
@@ -43,7 +43,8 @@ def transform_velo_scan(scan_file, R_velo_to_cam, R_rect, P_rect):
     X = np.hstack((scan[:, :3], np.ones((scan.shape[0], 1))))  
     Y = np.dot(P_rect, np.dot(R_rect, np.dot(R_velo_to_cam, X.T))).T
     return Y[:, :3]  
-system_choice = 2 #windows = 1, mac=0
+system_choice = 0 #windows = 1, mac=0
+p_rec_choice = 33 #9 00 33 for 03
 if system_choice==1:
     folder_path = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\velodyne_points\data"
 
@@ -53,12 +54,11 @@ if system_choice==1:
     output_folder = r'D:\Dokumente\01_BA_Git\pykitti\ausgabe'
 
 else:
-    folder_path = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/data"
-    file_path_R_velo_to_cam = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/calib_velo_to_cam.txt"
-    file_path_R_rect = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/calib_cam_to_cam.txt"
-    file_path_P_rect = "/Users/carstenschmotz/Documents/GitHub/pykitti/kitty/2011_09_26/2011_09_26_drive_0001_sync/calib_cam_to_cam.txt"
+    folder_path = "/Users/carstenschmotz/Downloads/2011_09_26-2/2011_09_26_drive_0001_sync/velodyne_points/data"
+    file_path_R_velo_to_cam = "/Users/carstenschmotz/Downloads/2011_09_26/calib_velo_to_cam.txt"
+    file_path_R_rect = "/Users/carstenschmotz/Downloads/2011_09_26/calib_cam_to_cam.txt"
+    file_path_P_rect = "//Users/carstenschmotz/Downloads/2011_09_26/calib_cam_to_cam.txt"
     output_folder = "/Users/carstenschmotz/Documents/GitHub/pykitti/ausgabe_try"
-
 
 R_velo_to_cam = load_velo_to_cam(file_path_R_velo_to_cam)
 R_rect = load_R_rect(file_path_R_rect)
@@ -79,10 +79,10 @@ for filename in os.listdir(folder_path):
         # Laden der Intensitätsdaten (vierte Spalte)
         intensity_data = np.fromfile(file_path, dtype=np.float32, count=-1)
         intensity_data = intensity_data.reshape(-1, 4)[:, 3]  # Vierte Spalte für Intensität
+        intensity_data = intensity_data[valid_indices]
         
         # Konvertieren der Punktwolkenkoordinaten in Pixelkoordinaten
-        scale_factor = 1
-        pixel_coords = ((transformed_scan[:, :2] / transformed_scan[:, 2].reshape(-1, 1)) * scale_factor).astype(int)
+        pixel_coords = ((transformed_scan[:, :2] / transformed_scan[:, 2].reshape(-1, 1))).astype(int)
         
         # Erstellen eines leeren Bildes
         image_width = 1242
@@ -90,22 +90,32 @@ for filename in os.listdir(folder_path):
         lidar_image = np.zeros((image_height, image_width, 3), dtype=np.uint8)  # RGB-Bild
         
          # Färben der Punkte basierend auf Intensitäten
+        # Färben der Punkte basierend auf Intensitäten
         for pixel_coord, intensity in zip(pixel_coords, intensity_data):
             x, y = pixel_coord
+            
             if 0 <= x < image_width and 0 <= y < image_height:
                 # Skalieren der Intensität auf den Bereich von 0 bis 255
-                intensity_scaled = int(intensity * 255)
-                
-                # Farbgebung basierend auf der Intensität
-                if intensity_scaled == 0:
-                    color = (0, 0, 0)  # Schwarz für fehlende Intensitäten
-                elif intensity_scaled < 64:
-                    color = (0, 0, intensity_scaled)  # Blau für niedrige Intensitäten
-                elif intensity_scaled < 192:
-                    color = (0, intensity_scaled, 255)  # Gelb für mittlere Intensitäten
+                value = int(intensity * 255)
+                if value <0 or value > 255:
+                    raise ValueError("Value must be between 0 and 255")
+                if value <= 127:
+                    #Red to Green
+                    t = value/ 127.0
+                    color = np.array([255 * (1-t),255 * t,0])
                 else:
-                    color = (intensity_scaled, 255, 0)  # Rot für hohe Intensitäten
+                    #green to blue
+                    t = (value -128)/127.0
+                    color = np.array([0,255* (1-t), 255*t])
+                #color.astype(int)
                 
-                lidar_image[y, x] = color  # Setze den Pixelwert auf die entsprechende Farbe
+                #lidar_image[y, x] = color  # Setze den Pixelwert auf die entsprechende Farbe
+                lidar_image[y, x] = color.astype(int)
+                #255 0,0 blau ;0, 255 ,0 grün; 0,0,255 rot ; 0,255,255 gelb
+
+            
+            
         output_filename = os.path.join(output_folder, filename.replace('.bin', '.png'))
         cv2.imwrite(output_filename, lidar_image)
+    print("done")
+        
