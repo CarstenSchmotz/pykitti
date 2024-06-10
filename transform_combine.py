@@ -40,9 +40,11 @@ def concatenate_images(folder1, folder2, output_folder):
 
 
 # Pfade zu den Bildern in den Ordnern
-folder1 = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\image_00\data"
-folder2 = r"D:\Dokumente\01_BA_Git\pykitti\ausgabe"
+#rgb
+folder1 = r"C:\Users\Besitzer\Desktop\pix2pix\image"#"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\image_00\data"
+#lidar or depth
+folder2 = r"C:\Users\Besitzer\Desktop\pix2pix\groundtruth_depth"#"D:\Dokumente\01_BA_Git\pykitti\ausgabe"
 
 # Ausgabepfad für das kombinierte Bild
-output_folder = r"D:\Dokumente\01_BA_Git\pykitti\outputforpix2pix"
+output_folder = r"C:\Users\Besitzer\Desktop\pix2pix\output"#"D:\Dokumente\01_BA_Git\pykitti\outputforpix2pix"
 concatenate_images(folder1, folder2, output_folder)

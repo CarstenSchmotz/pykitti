@@ -22,10 +22,11 @@ def convert_to_8bit(folder_path):
             img_8bit = cv2.convertScaleAbs(img, alpha=(255.0/65535.0))  # 16-Bit zu 8-Bit
             
             # Speichern des 8-Bit-Bildes im gleichen Ordner
-            output_path = os.path.join(folder_path, f"{os.path.splitext(filename)[0]}_8bit.png")
+            output_path = os.path.join(output_folder_path, f"{os.path.splitext(filename)[0]}_8bit.png")
             cv2.imwrite(output_path, img_8bit)
             print(f"{filename} wurde erfolgreich zu 8-Bit konvertiert und als {os.path.basename(output_path)} gespeichert.")
 
 # Beispielaufruf
-folder_path = r"D:\Dokumente\01_BA_Git\pykitti\outputforpix2pix"
+folder_path = r"C:\Users\Besitzer\Desktop\pix2pix\output"#"D:\Dokumente\01_BA_Git\pykitti\outputforpix2pix"
+output_folder_path = r"C:\Users\Besitzer\Desktop\pix2pix\output_bitrgb"
 convert_to_8bit(folder_path)

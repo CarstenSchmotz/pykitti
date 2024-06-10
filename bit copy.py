@@ -23,6 +23,6 @@ def convert_to_8bit(input_folder, output_folder):
             print(f"Converted {filename} to 8-bit")
 
 # Example usage:
-input_folder = r"D:\Dokumente\01_BA_Git\pykitti\outputforpix2pix"
-output_folder = r"D:\Dokumente\01_BA_Git\pykitti\outputbit"
+input_folder = r"C:\Users\Besitzer\Desktop\pix2pix\output"#"D:\Dokumente\01_BA_Git\pykitti\outputforpix2pix"
+output_folder = r"C:\Users\Besitzer\Desktop\pix2pix\output_bit"#"D:\Dokumente\01_BA_Git\pykitti\outputbit"
 convert_to_8bit(input_folder, output_folder)
