@@ -115,19 +115,20 @@ if __name__ == "__main__":
 
     input_folder_rgb = "/Users/carstenschmotz/Downloads/image"# use from kitty
     input_folder_depth = "/Users/carstenschmotz/Downloads/test" #use depth from depthanoted
-    bit_output_folder_rgb = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_bitrgb"
+    bit_output_folder_rgbd = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_bitrgb"
     bit_output_folder_depth = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_bitdepth"
-    output_folder = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output"
-    lidar_folder = ""# use from kitty after safe pointcloud
-    lidar_output = ""
-    clear_and_create_folder(bit_output_folder_rgb)
+    output_folder = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_pix2pix"
+    lidar_folder = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_folder_pointcloud"# use from kitty after safe pointcloud
+    lidar_output = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_folder_pointcloud_8bit"
+    input_folder_rgbd = "/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_folder_rgbd"
+    clear_and_create_folder(bit_output_folder_rgbd)
     clear_and_create_folder(bit_output_folder_depth)
     clear_and_create_folder(output_folder)
-    clear_and_create_folder(lidar_output)
+    #clear_and_create_folder(lidar_output)
 
-    folder_rgb = convert_to_8bit(input_folder_rgb, bit_output_folder_rgb)
+    folder_rgbd = convert_to_8bit(input_folder_rgbd, bit_output_folder_rgbd)
     folder_int = convert_to_8bit(lidar_folder, lidar_output)
-    folder_depth = convert_to_8bit(input_folder_depth, bit_output_folder_depth, is_depth=True)
+    #folder_depth = convert_to_8bit(input_folder_depth, bit_output_folder_depth, is_depth=True)
     
-    concatenate_images(folder_rgb, folder_depth, output_folder)
+    concatenate_images(bit_output_folder_rgbd, lidar_output, output_folder)
     split_dataset(output_folder)
