@@ -1,6 +1,7 @@
 import os
 import cv2
 import numpy as np
+import re
 
 def get_number_from_filename(filename):
     # Extract the number from the filename using regex
@@ -63,8 +64,8 @@ def main(folder1, folder2, output_folder):
         print(f"Saved overlayed image: {output_path}")
 
 if __name__ == "__main__":
-    folder1 = 'path/to/rgb_folder'  # Path to the folder with RGB images
-    folder2 = 'path/to/depth_folder'  # Path to the folder with depth images
-    output_folder = 'path/to/output_folder'  # Path to the folder where overlayed images will be saved
+    folder1 = "//Users/carstenschmotz/Downloads/2011_09_26_drive_0009_sync-2/image_02/data"  # Path to the folder with RGB images
+    folder2 = "/Users/carstenschmotz/Downloads/2011_09_26_drive_0009_sync/proj_depth/groundtruth/image_02"  # Path to the folder with depth images
+    output_folder = '/Users/carstenschmotz/Documents/GitHub/pykitti/pix2pix_processing/output_folder_rgbd'  # Path to the folder where overlayed images will be saved
 
     main(folder1, folder2, output_folder)
