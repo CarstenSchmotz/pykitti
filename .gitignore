@@ -8,3 +8,4 @@ dist/
 *.pyc
 output/
 *.png
+/pix2pix_processing
