@@ -68,12 +68,12 @@ file_path_R_rect =r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_d
 file_path_P_rect = r"D:\Dokumente\01_BA_Git\pykitti\kitty\2011_09_26\2011_09_26_drive_0001_sync\calib_cam_to_cam.txt"
 output_folder = r'D:\Dokumente\01_BA_Git\pykitti\ausgabe'
 '''
-dataset = "2011_09_28_drive_0004_sync"
-file_path_R_velo_to_cam = f"/Users/carstenschmotz/Desktop/kitti-step/val/{dataset}/calib_velo_to_cam.txt"
-file_path_R_rect = f"/Users/carstenschmotz/Desktop/kitti-step/val/{dataset}/calib_cam_to_cam.txt"
-file_path_P_rect = f"/Users/carstenschmotz/Desktop/kitti-step/val/{dataset}/calib_cam_to_cam.txt"
+dataset = "2011_09_29_drive_0071_sync"
+file_path_R_velo_to_cam = f"/Users/carstenschmotz/Desktop/kitti-step/train/{dataset}/calib_velo_to_cam.txt"
+file_path_R_rect = f"/Users/carstenschmotz/Desktop/kitti-step/train/{dataset}/calib_cam_to_cam.txt"
+file_path_P_rect = f"/Users/carstenschmotz/Desktop/kitti-step/train/{dataset}/calib_cam_to_cam.txt"
 output_folder = f"/Users/carstenschmotz/Desktop/kitti-step/lidar_output/{dataset}"
-folder_path =f"/Users/carstenschmotz/Desktop/kitti-step/val/{dataset}/velodyne_points/data"
+folder_path =f"/Users/carstenschmotz/Desktop/kitti-step/train/{dataset}/velodyne_points/data"
 
 def clear_and_create_folder(folder):
     if os.path.exists(folder):
