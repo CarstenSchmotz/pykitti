@@ -134,7 +134,7 @@ Datenverarbeitung, Informatik 9}
 {\LARGE\bf\@title}
 \vspace{1.50cm}
 
-{\large \@thesistype\ im Fach Informatik}
+{\large \@thesistype\ in computer science}
 \vspace{1.50cm}
 
 {\small vorgelegt von}\bigskip
