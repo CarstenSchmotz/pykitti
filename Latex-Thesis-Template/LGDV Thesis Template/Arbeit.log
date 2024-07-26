@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  23 JUL 2024 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  26 JUL 2024 20:46
 entering extended mode
 **./Arbeit.tex
 (Arbeit.tex
@@ -1451,10 +1451,10 @@ Chapter 1.
 
 ]
 Chapter 2.
-<image.jpg, id=121, 187.29128pt x 126.21803pt>
+<image.jpg, id=106, 187.29128pt x 126.21803pt>
 File: image.jpg Graphic file (type jpg)
 <use image.jpg>
-Package pdftex.def Info: image.jpg  used on input line 11.
+Package pdftex.def Info: image.jpg  used on input line 15.
 (pdftex.def)             Requested size: 398.38567pt x 268.48996pt.
 [5 <./image.jpg>] [6
 
@@ -1475,42 +1475,27 @@ Chapter 4.
 LaTeX Warning: Empty bibliography on input line 222.
 
 [11] (Arbeit.aux)
-
-Package rerunfilecheck Warning: File `Arbeit.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Arbeit.out':
-(rerunfilecheck)             Before: E3DC906214B39F2F4111DB46AE3D1D33;1531
-(rerunfilecheck)             After:  F36CD6554E55AA2EF8203316BCBB8390;1218.
+Package rerunfilecheck Info: File `Arbeit.out' has not changed.
+(rerunfilecheck)             Checksum: 24D5EB269B43336BA10F578437CEA300;1451.
 Package logreq Info: Writing requests to 'Arbeit.run.xml'.
 \openout1 = `Arbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45234 strings out of 479290
- 1038894 string characters out of 2863231
- 1840471 words of memory out of 3000000
- 61954 multiletter control sequences out of 15000+600000
+ 45228 strings out of 479290
+ 1038826 string characters out of 2863231
+ 1839508 words of memory out of 3000000
+ 61951 multiletter control sequences out of 15000+600000
  415286 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,131p,741b,848s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Arbeit.pdf (15 pages, 108079 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on Arbeit.pdf (15 pages, 108161 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 162 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
