@@ -1,0 +1,171 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{saxena2008depth}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=644d8ccbbb3e24c18e90af8f119e95c2}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cbefa82df275b7cdc08b7524b55657ba}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={S.H.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=922445c7b7144202e47b129b54ac5621}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={A.Y.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5229184d83412d20a6359647db3218f7}
+      \strng{fullhash}{5229184d83412d20a6359647db3218f7}
+      \strng{fullhashraw}{5229184d83412d20a6359647db3218f7}
+      \strng{bibnamehash}{5229184d83412d20a6359647db3218f7}
+      \strng{authorbibnamehash}{5229184d83412d20a6359647db3218f7}
+      \strng{authornamehash}{5229184d83412d20a6359647db3218f7}
+      \strng{authorfullhash}{5229184d83412d20a6359647db3218f7}
+      \strng{authorfullhashraw}{5229184d83412d20a6359647db3218f7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{number}{1}
+      \field{title}{3-D Depth Reconstruction from a Single Still Image}
+      \field{volume}{76}
+      \field{year}{2008}
+      \field{pages}{53\bibrangedash 69}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s11263-007-0071-y
+      \endverb
+    \endentry
+    \entry{depth_anything_v2}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=f1eeb2dd1fc5922091709e59023496f5}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lihe},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f00adc70822a55eef709dcde125a234b}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Bingyi},
+           giveni={B\bibinitperiod}}}%
+        {{hash=800352834f20c08bfb9c71e2873d3d37}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zilong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=768a78f72c9bf8b5ea782a3124e5c695}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=517d6a07fe7557d7f01c4e145ea3b2b6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaogang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ee4de6563d3aa74999c7a69f8f345e56}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Jiashi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b2c00b2ccbbe98f22709d2cb8ccc0bba}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hengshuang},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0999263125149a3258b75c988279e7ac}
+      \strng{fullhash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{fullhashraw}{6430ca374a67896a00bdac35d13834e2}
+      \strng{bibnamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authorbibnamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authornamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authorfullhash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{authorfullhashraw}{6430ca374a67896a00bdac35d13834e2}
+      \field{extraname}{1}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2406.09414}
+      \field{title}{Depth Anything V2}
+      \field{year}{2024}
+    \endentry
+    \entry{depthanything}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=f1eeb2dd1fc5922091709e59023496f5}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lihe},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f00adc70822a55eef709dcde125a234b}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Bingyi},
+           giveni={B\bibinitperiod}}}%
+        {{hash=800352834f20c08bfb9c71e2873d3d37}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zilong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=517d6a07fe7557d7f01c4e145ea3b2b6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaogang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ee4de6563d3aa74999c7a69f8f345e56}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Jiashi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b2c00b2ccbbe98f22709d2cb8ccc0bba}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hengshuang},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0999263125149a3258b75c988279e7ac}
+      \strng{fullhash}{b747e9da8f05ff81e8ffd026c30db1d0}
+      \strng{fullhashraw}{b747e9da8f05ff81e8ffd026c30db1d0}
+      \strng{bibnamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authorbibnamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authornamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authorfullhash}{b747e9da8f05ff81e8ffd026c30db1d0}
+      \strng{authorfullhashraw}{b747e9da8f05ff81e8ffd026c30db1d0}
+      \field{extraname}{2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
