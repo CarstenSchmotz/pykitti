@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  27 JUL 2024 23:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  27 JUL 2024 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,19 +1436,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [2
 
-] (Arbeit.toc)
+] (Arbeit.toc
+
+[3
+
+])
 \tf@toc=\write6
 \openout6 = `Arbeit.toc'.
 
 
 
-[3
-
-]
-
-[4
-
-] (Abstract.tex) (01-introduction.tex
+[4] (Abstract.tex) (01-introduction.tex
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
@@ -1456,7 +1454,9 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Introduction} [1]
+            {Introduction} [1
+
+]
 Chapter 1.
 
 
@@ -1470,7 +1470,7 @@ l.16 \chapter
 
 ]
 Chapter 2.
-<image.jpg, id=122, 187.29128pt x 126.21803pt>
+<image.jpg, id=177, 187.29128pt x 126.21803pt>
 File: image.jpg Graphic file (type jpg)
 <use image.jpg>
 Package pdftex.def Info: image.jpg  used on input line 23.
@@ -1483,7 +1483,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.27 \chapter
-             {Predicting LIDAR Intensity from RGB and Depth Images} [3
+             {Predicting LIDAR Intensity} %from RGB and Depth Images} [3
 
  <./image.jpg>]
 Chapter 3.
@@ -1494,17 +1494,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 	\item \textbf
-                   {Preparation:} Combined RGB images with depth maps genera...
-[4
+l.55 \end{itemize}
+                   [4
 
 ]
 
 [5]
+
+[6]
+
+[7]
 Chapter 4.
 ) (Appendix.tex)
 
-[6
+[8
 
 ] (Arbeit.lof)
 \tf@lof=\write7
@@ -1512,11 +1515,11 @@ Chapter 4.
 
 
 
-[7
+[9
 
 ]
 
-[8
+[10
 
 ] (Arbeit.aux)
  ***********
@@ -1530,20 +1533,20 @@ Package rerunfilecheck Warning: File `Arbeit.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Arbeit.out':
-(rerunfilecheck)             Before: BE07F0F68316139EE76312FA62A5C3DB;2314
-(rerunfilecheck)             After:  7973BFFDB1813D8DFECB2F5A36E06CE7;2604.
+(rerunfilecheck)             Before: BF7017CE1B984AA2C03CBBEA18B7F1DF;4490
+(rerunfilecheck)             After:  D6B3D386CCED675CBA653146C4412891;4345.
 Package logreq Info: Writing requests to 'Arbeit.run.xml'.
 \openout1 = `Arbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47665 strings out of 473903
- 1126895 string characters out of 5725163
- 1971605 words of memory out of 5000000
- 69824 multiletter control sequences out of 15000+600000
+ 47687 strings out of 473903
+ 1127250 string characters out of 5725163
+ 1975605 words of memory out of 5000000
+ 69835 multiletter control sequences out of 15000+600000
  569117 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,131p,729b,1340s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,131p,729b,1340s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Besitzer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
 crm1095.pk><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/t
@@ -1556,9 +1559,9 @@ fb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmsl10.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmti10.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Arbeit.pdf (12 pages, 183567 bytes).
+Output written on Arbeit.pdf (14 pages, 196025 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 
