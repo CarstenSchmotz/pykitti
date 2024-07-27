@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  27 JUL 2024 19:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  27 JUL 2024 20:02
 entering extended mode
 **./Arbeit.tex
 (Arbeit.tex
@@ -37,13 +37,7 @@ rs
 \f@nch@O@erf=\skip55
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
-)) (C:\Program Files\MiKTeX 2.9\tex/latex/a4wide\a4wide.sty
-Package: a4wide 1994/08/30
-
-(C:\Program Files\MiKTeX 2.9\tex/latex/ntgclass\a4.sty
-Package: a4 2023/01/10 v1.2g A4 based page layout
-))
-(C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty
+)) (C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
 (C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/generic/pdftexcmds\pdftexcmds
@@ -1272,70 +1266,33 @@ File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 z/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
-(C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-(C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks45
-\inpenc@posthook=\toks46
-)
-(C:\Program Files\MiKTeX 2.9\tex/latex/fancybox\fancybox.sty
-Package: fancybox 2010/05/15 1.4
-
-Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box96
-\shadowsize=\dimen318
-\@Sbox=\box97
-\do@VerbBox=\toks47
-\the@fancyput=\toks48
-\this@fancyput=\toks49
-\EndVerbatimTokens=\toks50
-\Verbatim@Outfile=\write5
-\Verbatim@Infile=\read4
-) (C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/latex/latex-tools\bm.sty
-Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup6
-\symboldletters=\mathgroup7
-\symboldsymbols=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 209.
-)
-
-Package biblatex Warning: Load 'inputenc' before biblatex.
-
 \@quotelevel=\count478
 \@quotereset=\count479
-(Arbeit.aux)
+ (Arbeit.aux)
 \openout1 = `Arbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx
+
+(C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1345,25 +1302,24 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Arbeit.bbl' found.
-
-(Arbeit.bbl)
-Package biblatex Info: Reference section=0 on input line 171.
-Package biblatex Info: Reference segment=0 on input line 171.
+ (Arbeit.bbl)
+Package biblatex Info: Reference section=0 on input line 43.
+Package biblatex Info: Reference segment=0 on input line 43.
 
 (C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count480
-\scratchdimen=\dimen319
-\scratchbox=\box98
+\scratchdimen=\dimen318
+\scratchbox=\box96
 \nofMPsegments=\count481
 \nofMParguments=\count482
-\everyMPshowfont=\toks51
+\everyMPshowfont=\toks45
 \MPscratchCnt=\count483
-\MPscratchDim=\dimen320
+\MPscratchDim=\dimen319
 \MPnumerator=\count484
 \makeMPintoPDFobject=\count485
-\everyMPtoPDFconversion=\toks52
+\everyMPtoPDFconversion=\toks46
 )
 (C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1373,7 +1329,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
  (C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 171.
+Package hyperref Info: Link coloring OFF on input line 43.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1387,19 +1343,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count486
 )
-LaTeX Info: Redefining \ref on input line 171.
-LaTeX Info: Redefining \pageref on input line 171.
-LaTeX Info: Redefining \nameref on input line 171.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
  (Arbeit.out) (Arbeit.out)
-\@outlinefile=\write6
-\openout6 = `Arbeit.out'.
-
-
-
-Package todonotes Warning: The length marginparwidth is less than 2cm and will 
-most likely cause issues with the appearance of inserted todonotes. The issue c
-an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 171.
+\@outlinefile=\write5
+\openout5 = `Arbeit.out'.
 
 
 (C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/latex/siunitx\siunitx-abbrevi
@@ -1418,15 +1367,15 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 171.
+ on input line 43.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 171
-.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+
 (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 171
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1435,67 +1384,119 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/Besitzer/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ] (Arbeit.toc)
-\tf@toc=\write7
-\openout7 = `Arbeit.toc'.
+\tf@toc=\write6
+\openout6 = `Arbeit.toc'.
 
  [3
 
 ]
 [4
 
-] (Abstract.tex) (01-introduction.tex [1]
+] (Abstract.tex) (01-introduction.texpdfTeX warning (ext4): destination with th
+e same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Introduction} [1]
 Chapter 1.
-[2
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \chapter
+             {Preparations} [2
 
 ]
 Chapter 2.
 <image.jpg, id=97, 187.29128pt x 126.21803pt>
 File: image.jpg Graphic file (type jpg)
 <use image.jpg>
-Package pdftex.def Info: image.jpg  used on input line 19.
-(pdftex.def)             Requested size: 398.38567pt x 268.48996pt.
-[3
+Package pdftex.def Info: image.jpg  used on input line 23.
+(pdftex.def)             Requested size: 422.77661pt x 284.92778pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \chapter
+             {Predicting LIDAR Intensity from RGB and Depth Images} [3
 
  <./image.jpg>]
 Chapter 3.
-[4
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 \chapter
+             {Conclusion} [4
 
 ]
 Chapter 4.
+
+LaTeX Warning: Citation 'depthanything' on page 5 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'depth_anything_v2' on page 5 undefined on input line 3
+7.
+
+
+LaTeX Warning: Citation 'saxena2008depth' on page 5 undefined on input line 37.
+
+
+
+Overfull \hbox (3.60358pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/n/10.95 ere is a ci-ta-tion for the Depth Any-thing pa-per [[]], its
+ ver-sion 2 [[]],
+ []
+
 ) (Appendix.tex) [5
 
 ] (Arbeit.lof)
-\tf@lof=\write8
-\openout8 = `Arbeit.lof'.
+\tf@lof=\write7
+\openout7 = `Arbeit.lof'.
 
 
 
-LaTeX Warning: Empty bibliography on input line 222.
+LaTeX Warning: Empty bibliography on input line 65.
 
 [6
 
 ] (Arbeit.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Arbeit.out' has not changed.
 (rerunfilecheck)             Checksum: 24D5EB269B43336BA10F578437CEA300;1451.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Arbeit
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Arbeit.run.xml'.
 \openout1 = `Arbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45223 strings out of 479290
- 1038794 string characters out of 2863231
- 1839515 words of memory out of 3000000
- 61951 multiletter control sequences out of 15000+600000
- 415286 words of font info for 70 fonts, out of 8000000 for 9000
+ 45063 strings out of 479290
+ 1037501 string characters out of 2863231
+ 1828566 words of memory out of 3000000
+ 61825 multiletter control sequences out of 15000+600000
+ 414900 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,131p,741b,848s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,11n,131p,741b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Arbeit.pdf (10 pages, 105745 bytes).
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsl10.pfb>
+Output written on Arbeit.pdf (10 pages, 123411 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
