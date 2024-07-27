@@ -28,7 +28,7 @@
 \typeout{studdipl: Studien/Diplomarbeiten am Lehrstuhl fuer Graphische
 Datenverarbeitung, Informatik 9}
 
-\LoadClass{report}
+\LoadClass[openany]{report}
 
 %%%%
 %
