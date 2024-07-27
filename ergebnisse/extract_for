@@ -14,8 +14,8 @@ numbers = [
 ]
 
 # Directories
-source_dir = r'D:\projekt_depth\for_training\lidar'
-destination_dir = r'D:\projekt_depth\for_training\eva_depth\lidar'
+source_dir = r'D:\projekt_depth\for_training\metricv2_onlydepth'
+destination_dir = r'D:\projekt_depth\for_training\eva_depth\metric'
 
 # Create the destination directory if it doesn't exist
 os.makedirs(destination_dir, exist_ok=True)
