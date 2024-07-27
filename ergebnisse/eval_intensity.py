@@ -1,73 +1,72 @@
 import cv2
 import os
-from matplotlib import pyplot as plt
 import numpy as np
 from skimage.metrics import structural_similarity as ssim
 
-
-predicted_path  = "/home/oq55olys/Projects/NN/pytorch-CycleGAN-and-pix2pix/results/pix2pix_kitti/val_latest/images/"
-base_path = "/media/oq55olys/chonk/Datasets/kittilike/kitti-step/val/"
-target_path = "/media/oq55olys/chonk/Datasets/kittilike/kitti-step/valB/"
-merged_path = "/media/oq55olys/chonk/Datasets/kittilike/kitti-step/predicted/"
-
+# Paths
+predicted_path = r"D:\projekt_depth\for_training\eva\rgb"
+base_path = r"D:\projekt_depth\results-20240727T161841Z-001\results\rgb\test_latest\images"
+target_path = r"D:\projekt_depth\for_training\eva\result"
+merged_path = r"D:\projekt_depth\for_training\eva\lidar"
 
 if not os.path.exists(merged_path):
     os.makedirs(merged_path)
 
-
 def compute_metrics(img_in, img_tar):
-    diff = np.abs(img_in.astype(np.float32) - img_tar.astype(np.float32))/255.0
-    mse =diff**2
-    #only keep diff values where img_tar is not zero
+    diff = np.abs(img_in.astype(np.float32) - img_tar.astype(np.float32)) / 255.0
+    mse = diff**2
     diff_score = diff[np.where(img_tar != 0)]
     mse = mse[np.where(img_tar != 0)]
     mse = np.mean(mse)
-    psnr = 10*np.log10(255*255/mse)
+    psnr = 10 * np.log10(255 * 255 / mse)
     l1 = np.mean(diff_score)
 
-    #todo compare with mask
-    ssim_full, ssim_img = ssim(img_in, img_tar, data_range= img_in.max() - img_in.min(), gaussian_weights=True, sigma=0.25, full=True)
+    ssim_full, ssim_img = ssim(img_in, img_tar, data_range=img_in.max() - img_in.min(), gaussian_weights=True, sigma=0.25, full=True)
     ssim_score = ssim_img[np.where(img_tar != 0)]
     ssim_masked = np.mean(ssim_score)
-    #invert ssim_img
-    #ssim_img = 255-ssim_img*255
 
     return l1, mse, psnr, ssim_masked
 
-
-
 def read_image(path, num_parts, gray=True):
+    if not os.path.isfile(path):
+        print(f"File does not exist: {path}")
+        return None, None
 
     stitch = num_parts > 1
-    file_name = path.split('/')[-1]
+    file_name = os.path.basename(path)
 
-    if stitch: 
+    if stitch:
         if not gray:
-            print ('stitching only supports grayscale images')
-            exit()
-        #scale img_width to 4 times
-        img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
-        merged = img
-        img = cv2.resize(img, (img.shape[1]*4, img.shape[0]))
-  
-        prefix = file_name.split('_')[0] + '_' + file_name.split('_')[1]
-        
-        for j in range(3):
-            path_next = path.replace('_0.png', '_'+str(j+1)+'.png')
-            img = cv2.imread(path_next, cv2.IMREAD_GRAYSCALE)
-            merged = np.hstack((merged, img))
+            print('Stitching only supports grayscale images')
+            return None, None
 
+        img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
+        if img is None:
+            print(f"Failed to read image: {path}")
+            return None, None
+
+        merged = img
+        img = cv2.resize(img, (img.shape[1] * 4, img.shape[0]))
+
+        prefix = '_'.join(file_name.split('_')[:2])
+
+        for j in range(3):
+            path_next = path.replace('_0.png', f'_{j + 1}.png')
+            img_next = cv2.imread(path_next, cv2.IMREAD_GRAYSCALE)
+            if img_next is None:
+                print(f"Failed to read image: {path_next}")
+                return None, None
+            merged = np.hstack((merged, img_next))
 
         img = merged
-
     else:
-        if gray:
-            img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
-        else:
-            img = cv2.imread(path)
-        #crop inner 1024x256
+        img = cv2.imread(path, cv2.IMREAD_GRAYSCALE) if gray else cv2.imread(path)
+        if img is None:
+            print(f"Failed to read image: {path}")
+            return None, None
+
         w = img.shape[1]
-        l = (w - 1024)//2
+        l = (w - 1024) // 2
         r = l + 1024
         b = img.shape[0] - 256
         t = img.shape[0]
@@ -77,45 +76,43 @@ def read_image(path, num_parts, gray=True):
 
     return img, prefix
 
-
-predicted_files = os.listdir(predicted_path)
-#sort
-predicted_files.sort()
-#load first file to get shape
-gt_files = os.listdir(target_path)
-gt_files.sort()
+predicted_files = sorted(os.listdir(predicted_path))
+gt_files = sorted(os.listdir(target_path))
 
 num_parts = 4
 
 l1 = 0
-num_files = len(predicted_files)
-psnr= 0
+psnr = 0
 ssim_score = 0
 mse = 0
 
-num_images = num_files//num_parts
-
+num_files = len(predicted_files)
+num_images = num_files // num_parts
 num_files = num_images * num_parts
 
 for i in range(0, num_files, num_parts):
-    #read projected as grayscale
+    predicted_file = os.path.join(predicted_path, predicted_files[i])
+    merged, name = read_image(predicted_file, num_parts)
+    if merged is None:
+        continue
 
-    merged, name = read_image(predicted_path+ predicted_files[i], num_parts)
-    #make merged random grayscale values
-
-    #get folder from kitti step which is the first part e.g 0013 and the file name without the folder
-    dir = name.split('_')[0]
+    dir_name = name.split('_')[0]
     og_name = name.split('_')[1]
 
-    
-    input_path = base_path + dir + '/image_02/data/'
+    input_path = os.path.join(base_path, dir_name, 'image_02', 'data')
 
+    gt_file = os.path.join(target_path, gt_files[i])
+    projected, _ = read_image(gt_file, num_parts)
+    if projected is None:
+        continue
 
-    projected = read_image(target_path+ gt_files[i], num_parts)[0]
     merged_masked = merged.copy()
     merged_masked[projected == 0] = 0
-    #stack projected and merged merged_masked vertically
-    rgb= read_image(input_path+ og_name + '.png', 1, gray=False)[0]
+
+    rgb_file = os.path.join(input_path, og_name + '.png')
+    rgb, _ = read_image(rgb_file, 1, gray=False)
+    if rgb is None:
+        continue
 
     merged = np.vstack((merged, merged_masked, projected))
     merged = np.dstack((merged, merged, merged))
@@ -129,17 +126,16 @@ for i in range(0, num_files, num_parts):
     ssim_score += ssim_score_single
 
     if i % 100 == 0:
-        print(i, " out of ", num_files)
-        cv2.imwrite(merged_path + name + '.png', merged)
-        print('saved ' + merged_path + '/' + name + '.png')
-        #print all losses for this file
-        print("L1: ", l1_single, "PSNR: ", psnr_single, "SSIM: ", ssim_score_single, "MSE: ", mse_single)
+        print(f"{i} out of {num_files}")
+        merged_file_path = os.path.join(merged_path, name + '.png')
+        cv2.imwrite(merged_file_path, merged)
+        print(f"Saved {merged_file_path}")
+        print(f"L1: {l1_single} PSNR: {psnr_single} SSIM: {ssim_score_single} MSE: {mse_single}")
 
-l1 = l1/num_images
-psnr = psnr/num_images
-ssim = ssim_score/num_images
-mse = mse/num_images
-print("L1: ", l1, "PSNR: ", psnr, "SSIM: ", ssim, "MSE: ", mse)
+l1 /= num_images
+psnr /= num_images
+ssim = ssim_score / num_images
+mse /= num_images
+print(f"L1: {l1} PSNR: {psnr} SSIM: {ssim} MSE: {mse}")
 
 exit()
-
