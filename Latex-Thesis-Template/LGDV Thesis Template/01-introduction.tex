@@ -7,9 +7,13 @@ LiDAR senors provide critical depth information for autonomous driving and robot
 \section{Contribution}
 This project explores the use of the Pix2Pix network to predict LiDAR intensity maps by leveraging RGB images and depth maps as additional inputs.
 \section{Related Work}
-bpnet depth anything v1 2 and metric change pix2pix to 4 dim input
+DeptAnything Models: \newline DepthAnything represents a significant advancement in monocular depth estimation by leveraging both labeled and unlabeled data at a large scale. Trained on 1.5 million labeled images and over 62 million unlabeled images, DepthAnything achieves state-of-the-art performance in depth estimation tasks. The model excels in both zero-shot relative and metric depth estimation, outperforming previous models such as MiDaS v3.1 and ZoeDepth.
+
 \chapter{Preparations}
 used google colab, pix2pix network getting the right input, pix2pix problems
+
+
+
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{image.jpg}
@@ -20,7 +24,7 @@ used google colab, pix2pix network getting the right input, pix2pix problems
 \section{Setup}
 The used the bp net it is for depth completion and depth prediction
 pix2pix model with modified data loader to get 4 dim. input rgb plus depth
-
+used base model for depthanything
 \section{Implementation}
 \section{Results}
 test run rgb only. depht from depthanything the depth from depthanything v2 and metriv form depthanything v2 6 runs with different solution
