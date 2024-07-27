@@ -1,0 +1,40 @@
+import os
+import shutil
+
+# List of numbers to search for in filenames
+'''numbers = [
+    30, 39, 44, 54, 60, 63, 70, 72, 76, 86, 88, 96, 101, 110, 120, 136, 139, 198,
+    208, 210, 213, 215, 218, 237, 247, 259, 265, 275, 277, 280, 281, 289, 294, 307,
+    310, 312, 318, 319, 346, 351, 355, 361, 365, 371, 377
+]'''
+numbers = [
+    1, 2, 10, 12, 22, 33, 38, 43, 70, 76, 90, 99, 106, 117, 119, 125, 144, 154, 164,
+    180, 182, 188, 192, 228, 230, 247, 252, 262, 279, 282, 321, 326, 328, 331, 375,
+    403, 408, 413, 419, 425, 432, 433, 440, 456, 458, 478, 483, 486, 498
+]
+
+# Directories
+source_dir = r'D:\projekt_depth\for_training\lidar'
+destination_dir = r'D:\projekt_depth\for_training\eva_depth\lidar'
+
+# Create the destination directory if it doesn't exist
+os.makedirs(destination_dir, exist_ok=True)
+
+# Convert numbers list to zero-padded strings
+number_strings = [f"{number:010}" for number in numbers]
+
+# Iterate through files in the source directory
+for filename in os.listdir(source_dir):
+    # Extract the numeric part from the filename (assuming it's at the beginning and 10 digits long)
+    numeric_part = filename[:10]
+    # Check if the numeric part of the filename is in the number strings list
+    if numeric_part in number_strings:
+        # Full path of the source file
+        src_file = os.path.join(source_dir, filename)
+        # Full path of the destination file
+        dst_file = os.path.join(destination_dir, filename)
+        # Copy the file to the destination directory
+        shutil.copy2(src_file, dst_file)
+        print(f"Copied {filename} to {destination_dir}")
+
+print("Done copying files.")
