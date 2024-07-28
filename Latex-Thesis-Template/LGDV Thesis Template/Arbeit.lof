@@ -7,9 +7,9 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces RGB LiDAR and predicted LiDAR.}}{9}{figure.caption.6}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces RGB LiDAR and predicted LiDAR.}}{10}{figure.caption.7}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces RGB LiDAR and predicted LiDAR.}}{11}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces RGB BP LiDAR and predicted LiDAR.}}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces RGB Depthanything v1 LiDAR and predicted LiDAR.}}{13}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces RGB Depthanything v2 LiDAR and predicted LiDAR.}}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces RGB, Depth, Predicted LiDAR, and Fake LiDAR images for the BP Net setup.}}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces RGB, Depth, Predicted LiDAR, and Fake LiDAR images for the Depth Anything v1 setup.}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces RGB, Depth, Predicted LiDAR, and Fake LiDAR images for the Depth Anything v2 setup.}}{14}{figure.caption.11}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces RGB Depthanything metric LiDAR and predicted LiDAR.}}{15}{figure.caption.12}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces RGB Depthanything metric LiDAR and predicted LiDAR.}}{16}{figure.caption.13}%
 \addvspace {10\p@ }
