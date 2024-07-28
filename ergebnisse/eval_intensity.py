@@ -4,10 +4,10 @@ import numpy as np
 from skimage.metrics import structural_similarity as ssim
 
 # Paths
-predicted_path = r"D:\projekt_depth\for_training\eva\rgb"
+predicted_path = r"D:\projekt_depth\for_training\eva\rgb" #rgb
 base_path = r"D:\projekt_depth\results-20240727T161841Z-001\results\rgb\test_latest\images"
-target_path = r"D:\projekt_depth\for_training\eva\result"
-merged_path = r"D:\projekt_depth\for_training\eva\lidar"
+target_path =  r"D:\projekt_depth\for_training\eva\lidar" #groundtruth
+merged_path =  r"D:\projekt_depth\for_training\eva\result"
 
 if not os.path.exists(merged_path):
     os.makedirs(merged_path)

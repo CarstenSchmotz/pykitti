@@ -9,3 +9,4 @@ dist/
 output/
 *.png
 /pix2pix_processing
+~$testvalidationfrom.xlsx

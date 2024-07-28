@@ -12,17 +12,17 @@
 \contentsline {subsection}{\numberline {3.1.5}pix2pix Network}{5}{subsection.3.1.5}%
 \contentsline {section}{\numberline {3.2}Implementation}{5}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Data Preprocessing}{5}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Model Training}{5}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Results}{5}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.2}Model Training}{6}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Results}{6}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}RGB to LIDAR}{6}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}RGB plus Depth from BP Net to LIDAR}{6}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Depth BP Net to LIDAR}{6}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Depth Anything v1 to LIDAR}{6}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Depth Anything v2 to LIDAR}{6}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}Metric Depth to LIDAR}{6}{subsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.7}RGB plus Depth Anything v1 to LIDAR}{7}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}RGB plus Depth Anything v2 to LIDAR}{7}{subsection.3.3.8}%
-\contentsline {subsection}{\numberline {3.3.9}RGB plus Metric Depth to LIDAR}{7}{subsection.3.3.9}%
-\contentsline {chapter}{\numberline {4}Conclusion}{8}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Appendix}{8}{section.4.1}%
-\contentsline {section}{\numberline {4.2}References}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {3.3.4}Depth Anything v1 to LIDAR}{7}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Depth Anything v2 to LIDAR}{7}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Metric Depth to LIDAR}{8}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}RGB plus Depth Anything v1 to LIDAR}{9}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}RGB plus Depth Anything v2 to LIDAR}{9}{subsection.3.3.8}%
+\contentsline {subsection}{\numberline {3.3.9}RGB plus Metric Depth to LIDAR}{10}{subsection.3.3.9}%
+\contentsline {chapter}{\numberline {4}Conclusion}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Appendix}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}References}{17}{section.4.2}%
