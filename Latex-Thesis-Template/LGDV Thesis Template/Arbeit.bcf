@@ -2372,13 +2372,13 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">BP-Net</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">depthanything</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">depth_anything_v2</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">saxena2008depth</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Geiger2013IJRR</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">CycleGAN2017</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">isola2017image</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">CycleGAN2017</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">isola2017image</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">BP-Net</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">depthanything</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">depth_anything_v2</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">saxena2008depth</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Geiger2013IJRR</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
