@@ -1,11 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  22 JUL 2024 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  29 JUL 2024 15:31
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **./Deckblatt.tex
 (Deckblatt.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18>
-(C:\Program Files\MiKTeX 2.9\tex/latex/base\latex209.def
-File: latex209.def 2020/08/21 v0.55 Standard LaTeX file
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-05-27>
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\latex209.def
+File: latex209.def 2020/11/26 v0.55 Standard LaTeX file
 
 
           Entering LaTeX 2.09 COMPATIBILITY MODE
@@ -31,16 +33,18 @@ File: latex209.def 2020/08/21 v0.55 Standard LaTeX file
  author of that file.
  *************************************************************
 
-\footheight=\dimen138
-\@maxsep=\dimen139
-\@dblmaxsep=\dimen140
-\@cla=\count179
-\@clb=\count180
-\mscount=\count181
-(C:\Program Files\MiKTeX 2.9\tex/latex/base\tracefnt.sty
-Package: tracefnt 2019/10/11 v3.0l Standard LaTeX package (font tracing)
-\tracingfonts=\count182
-LaTeX Info: Redefining \selectfont on input line 106.
+\footheight=\dimen141
+\@maxsep=\dimen142
+\@dblmaxsep=\dimen143
+\@cla=\count194
+\@clb=\count195
+\mscount=\count196
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\tracefnt.sty
+Package: tracefnt 2020/12/22 v3.0n Standard LaTeX package (font tracing)
+\tracingfonts=\count197
+LaTeX Info: Redefining \selectfont on input line 107.
+Applying: [2021/06/01] Add hook to \selectfont  on input line 142.
+Already applied: [0000/00/00] Add hook to \selectfont  on input line 145.
 )
 \symbold=\mathgroup4
 \symsans=\mathgroup5
@@ -54,7 +58,7 @@ LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 277.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 283.
 LaTeX Info: Redefining \em on input line 293.
 
-(C:\Program Files\MiKTeX 2.9\tex/latex/base\latexsym.sty
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
@@ -64,21 +68,21 @@ LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 339.
 LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 341.
 LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 343.
 )
-(C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls
-Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo
-File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
+\c@part=\count198
+\c@section=\count199
+\c@subsection=\count266
+\c@subsubsection=\count267
+\c@paragraph=\count268
+\c@subparagraph=\count269
+\c@figure=\count270
+\c@table=\count271
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
 Compatibility mode: definition of \rm ignored.
 Compatibility mode: definition of \sf ignored.
 Compatibility mode: definition of \tt ignored.
@@ -88,30 +92,31 @@ Compatibility mode: definition of \sl ignored.
 Compatibility mode: definition of \sc ignored.
 LaTeX Info: Redefining \cal on input line 497.
 LaTeX Info: Redefining \mit on input line 498.
-\bibindent=\dimen141
+\bibindent=\dimen144
 )
-(C:\Program Files\MiKTeX 2.9\tex/generic/german\german.sty v2.5e 1998-07-08
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/generic/german\german.sty
+v2.5e 1998-07-08
 Package: german 1998/07/08 v2.5e Support for writing german texts (br)
-\grmnU@D=\dimen142
-german -- \language number for Austrian undefined, default 28 used.
+\grmnU@D=\dimen145
+german -- \language number for Austrian undefined, default 26 used.
 )
-(C:\Program Files\MiKTeX 2.9\tex/latex/umlaute\umlaute.sty
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/umlaute\umlaute.sty
 Package: umlaute 2006/01/29 v2.1 umlaute package (AS)
 
 
 Package umlaute Warning: This package has been superseeded by the `inputenc' pa
 ckage on input line 32.
 
-(C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 ))
-(C:\Users\Besitzer\AppData\Roaming\MiKTeX\2.9\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count191
-\l__pdf_internal_box=\box47
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count272
+\l__pdf_internal_box=\box52
 ) (Deckblatt.aux)
 \openout1 = `Deckblatt.aux'.
 
@@ -135,31 +140,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 28.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 28
 .
- (C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd
+
+(C:\Users\Besitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 Overfull \hbox (76.97316pt too wide) in paragraph at lines 24--38
 []|  [] 
  []
 
+
+
 [1
 
-{C:/Users/Besitzer/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(Deckblatt.aux) ) 
+{C:/Users/Besitzer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(Deckblatt.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-05-27>
+ ***********
+ ) 
 Here is how much of TeX's memory you used:
- 785 strings out of 479290
- 12128 string characters out of 2863231
- 298026 words of memory out of 3000000
- 18305 multiletter control sequences out of 15000+600000
- 410605 words of font info for 53 fonts, out of 8000000 for 9000
+ 889 strings out of 473903
+ 15656 string characters out of 5725163
+ 1928908 words of memory out of 5000000
+ 23798 multiletter control sequences out of 15000+600000
+ 565244 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,60p,179b,209s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-Output written on Deckblatt.pdf (1 page, 34152 bytes).
+ 44i,5n,51p,181b,225s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmss10.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmss12.pfb>
+Output written on Deckblatt.pdf (1 page, 36455 bytes).
 PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
+ 21 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

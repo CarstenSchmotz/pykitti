@@ -13,8 +13,8 @@ version 2
 \newline
 3D Reconstruction Techniques: 3D reconstruction is a broad field focused on creating three-dimensional models from two-dimensional images or depth data. Techniques in 3D reconstruction include methods like structure-from-motion (SfM), multi-view stereo (MVS), and volumetric approaches. These techniques aim to generate accurate 3D representations of scenes or objects from multiple views or depth sensors.
 
-\chapter{Preparations}
-used google colab, pix2pix network getting the right input, pix2pix problems
+%\chapter{Preparations}
+%used google colab, pix2pix network getting the right input, pix2pix problems
 
 
 
@@ -310,7 +310,7 @@ The combination of RGB images with precise metric (Figure \ref{metric_rgbd})dept
 	\label{metric_rgbd}
 \end{figure}
 \chapter{Conclusion}
-In conclusion, the results of different depthmaps against LiDAR are showing bad prediction for the for most of the sole depthmaps input. The combine inputs are performing better on the prediction. The comparions are not fully aceptalbe because there were problems with the different output images and mostly not machting samples. Furhtermore did the provide script not work for this installment because the cropped output picture should be in pairs of 4 be stited togehter to get the full image. This leads to an difficult evaltion on the data. \newline \\Overall there are some differnece to be notice dephtanything v2 performeces better dann v1 and the metric depth is better than both. The BP Net shows also some good result. A better approch is to use the same output images and to run without masking for  a more reliable result.
+In conclusion, the results of different depthmaps against LiDAR are showing bad prediction for the for most of the sole depthmaps input. The combine inputs are performing better on the prediction. The comparions are not fully aceptalbe because there were problems with the different output images and mostly not machting samples. Furhtermore did the provide script not work for this installment because the cropped output picture should be in pairs of 4 be stited togehter to get the full image. This leads to an difficult evaltion on the data. \newline \\Overall there are some differnece to be notice dephtanything v2 performeces better dann v1 and the metric depth is better than both. The BP Net shows also some good result. A better approch is to use the same output images and to run without masking for  a more reliable result. Furthermore is the missing of loss function due to not working scripts a big disadvantage for evalation.
 
 \section{Appendix}
 \subsection{RGB to LiDAR}

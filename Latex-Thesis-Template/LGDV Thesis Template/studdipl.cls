@@ -134,7 +134,7 @@ Datenverarbeitung, Informatik 9}
 {\LARGE\bf\@title}
 \vspace{1.50cm}
 
-{\large \@thesistype\ in computer science}
+{\large Project report in computer science for sensor simultion challenge}
 \vspace{1.50cm}
 
 {\small vorgelegt von}\bigskip
@@ -144,7 +144,7 @@ Datenverarbeitung, Informatik 9}
 geb.\ am \@birthday\ in \@birthplace\bigskip
 \vspace{1.5cm}
 
-{\small angefertigt am}\bigskip
+%{\small angefertigt am}\bigskip
 
 {\bf Department Informatik\\
 Lehrstuhl Graphische Datenverarbeitung\\
