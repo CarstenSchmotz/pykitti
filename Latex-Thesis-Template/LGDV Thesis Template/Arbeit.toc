@@ -1,24 +1,24 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Contribution}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Related Work}{3}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Predicting LiDAR Intensity}{4}{chapter.2}%
+\contentsline {section}{\numberline {1.3}Related work}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}LiDAR Intensity Prediction}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Setup}{4}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Bilateral Propagation Network (BP Net)}{4}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Depth Anything Models}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.1}Bilateral Propagation Net (BP-Net)}{4}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Depth-Anything Models}{4}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Pix2pix Network}{4}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}Implementation}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Depth Map Generation}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Generation of depth maps}{5}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Model Training}{6}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Results}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Depth BP Net to LiDAR}{7}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Depth Anything v1 to LiDAR}{8}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Depth Anything v2 to LiDAR}{9}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.1}Depth BP-Net to LiDAR}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Depth-Anything v1 to LiDAR}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Depth-Anything v2 to LiDAR}{9}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Metric Depth to LiDAR}{10}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}RGB plus BP Net to LiDAR}{11}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}RGB plus Depth Anything v1 to LiDAR}{12}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}RGB plus Depth Anything v2 to LiDAR}{13}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.5}RGB plus BP-Net to LiDAR}{11}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}RGB plus Depth-Anything v1 to LiDAR}{12}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}RGB plus Depth-Anything v2 to LiDAR}{13}{subsection.2.3.7}%
 \contentsline {subsection}{\numberline {2.3.8}RGB plus Metric Depth to LiDAR}{13}{subsection.2.3.8}%
 \contentsline {chapter}{\numberline {3}Conclusion}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Appendix}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}RGB to LiDAR}{15}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.1}Appendix}{16}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}RGB to LiDAR}{16}{subsection.3.1.1}%

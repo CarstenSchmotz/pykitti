@@ -3,58 +3,54 @@
 
 \section{Motivation}
 \label{sect:motivation}
-LiDAR senors provide critical depth information for autonomous driving and robotics. The LiDAR intensity maps are often spares and incomplete. Using depht maps as an addtional input is a way to impove the richness and accuracy ot the LiDAR predection. The Pix2Pix network for image-to-image translation offers a promising approch for integrating these modalities. 
+LiDAR sensors provide critical depth information for autonomous driving and robotics. LiDAR intensity maps are often sparse and incomplete. Using depth maps as additional input is a way to improve the richness and accuracy of LiDAR prediction. The Pix2Pix image-to-image translation network is a promising approach for integrating these modalities.
 \section{Contribution}
-This project explores the use of the Pix2Pix network to predict LiDAR intensity maps by leveraging RGB images and depth maps as additional inputs.
-\section{Related Work}
-\textbf{BP Net (Bilateral Propagation Network):} is a neural network architecture designed for depth completion task. It generates dense depth maps from sparse data \cite{BP-Net}. \\
-\newline \textbf{DeptAnything Models:}  DepthAnything represents a significant advancement in monocular depth estimation by leveraging both labeled and unlabeled data at a large scale \cite{depthanything}. There are two version availble the second one has a better accuracy and robustness of depth estimaions \cite{depth_anything_v2}. Furthermore are these networks cabible to perform metric depth to provide distance measurements from images.
-\\ \textbf{3D Reconstruction Techniques:} 3D reconstruction focused on creating three-dimensional models from two-dimensional images or depth data. Techniques in 3D reconstruction include methods like structure-from-motion (SfM) and multi-view stereo (MVS). These techniques aim to generate accurate 3D representations of scenes or objects from multiple views or depth sensors \cite{saxena2008depth}.
+This project explores the use of the Pix2Pix network to predict LiDAR intensity maps using RGB images and depth maps as additional inputs.
+\section{Related work}
+\textbf{BP-Net (Bilateral Propagation Network):} is a neural network architecture designed for depth completion tasks. It generates dense depth maps from sparse data \cite{BP-Net}. \\
+\newline \textbf{Depth-Anything Models:}  Depth-Anything represents a significant advance in monocular depth estimation by using both labelled and unlabelled data on a large scale \cite{depthanything}. There are two versions available, the second having better accuracy and robustness of depth estimation \cite{depth_anything_v2}. These nets are also capable of performing metric depth to provide distance measurements from images.
+\\ \textbf{3D Reconstruction Techniques:} 3D reconstruction focuses on creating three-dimensional models from two-dimensional images or depth data. 3D reconstruction techniques include methods such as structure-from-motion (SfM) and multi-view stereo (MVS). These techniques aim to generate accurate 3D representations of scenes or objects from multiple views or depth sensors \cite{saxena2008depth}.
 
 %\chapter{Preparations}
 %used google colab, pix2pix network getting the right input, pix2pix problems
 
 
 
-\chapter{Predicting LiDAR Intensity} %from RGB and Depth Images}
+\chapter{LiDAR Intensity Prediction} %from RGB and Depth Images}
 \section{Setup}
-%The networks  net it is for depth completion and depth prediction
-%pix2pix model with modified data loader to get 4 dim. input rgb plus depth
-%used base model for depthanything
-%The setup for this project involved configuring a series of models and datasets to predict LiDAR intensity from RGB and depth images. The key components and their roles are outlined below:
-First of all the depth was created thru rgb pictures taken from "The KITTI Dataset" \cite{Geiger2013IJRR}. In order to get a great variatyof depth for comparison Bilateral Propagation Network (BP Net), Depthanything v1 \& 2 and metric v2 was used. The metric depth v1 was not used because it did not run intime.
-\subsection{Bilateral Propagation Network (BP Net)}
+First, the depth was created using RGB images from "The KITTI Dataset" \cite{Geiger2013IJRR}. In order to get a large variety of depths for comparison, the Bilateral Propagation Network (BP-Net), Depthanything v1 \& 2 and Metric v2 were used. The metric depth v1 was not used because it did not run in time.
+\subsection{Bilateral Propagation Net (BP-Net)}
 \begin{itemize}
 	\item \textbf{Purpose:} Used for depth completion to improve depth maps from incomplete or noisy data.
-	\item \textbf{Dataset:} The input was raw data from kitti with a depth completion set already availible. 
+	\item \textbf{Data set:} The input was raw data from kitti with a depth completion set already available. 
 \end{itemize}
 
-\subsection{Depth Anything Models}
+\subsection{Depth-Anything Models}
 \begin{itemize}
-	\item \textbf{Depth Anything v1:} Provided initial depth estimations using large-scale unlabeled data for zero-shot learning.
-	\item \textbf{Depth Anything v2:} Enhanced depth prediction capabilities, incorporating improvements over v1 for better depth map accuracy.
+	\item \textbf{Depth-Anything v1:} Provides initial depth estimates using large unlabeled data for zero-shot learning.
+	\item \textbf{Depth-Anything v2:} Enhanced depth prediction capabilities, incorporating improvements over v1 for better depth map accuracy.
 
 
- 	\item \textbf {Metric Depth Estimation v2:} Supplemented depth maps with precise metric depth measurements.
+ 	\item \textbf {Metric Depth Estimation v2:} Enhanced depth maps with precise metric depth measurements.
 
-	\item \textbf{Dataset:} Corresponding RGB images used in BP Net for better comparison.
+	\item \textbf{Dataset:} Corresponding RGB images used in BP-Net for better comparison.
 \end{itemize}
 
 \subsection{Pix2pix Network}
 \begin{itemize}
-	\item \textbf{Purpose:} Image to Image processing to predict LiDAR intensity from RGB and depth images \cite{CycleGAN2017} \cite{isola2017image}. 
+	\item \textbf{Purpose:} Image-to-Image processing to predict LiDAR intensity from RGB and depth images \cite{CycleGAN2017} \cite{isola2017image}. 
 	\item \textbf{Training Data:} RGB and depth pairs from the KITTI dataset.
-	Eight different input data variations were used see in Chapter \ref{results}.
+	Eight different input data variations were used, see in section \ref{results}.
 \end{itemize}
 
 \section{Implementation}
-\subsection{Depth Map Generation}
+\subsection{Generation of depth maps}
 \begin{itemize}
-	\item \textbf{BP Net:} An existing pretrained model on kitti data was loaded. Utilized BP Net and Depth Anything models to generate depth maps from the KITTI dataset. Depth maps were processed to ensure consistency and accuracy before use. The output was 1000 depthmaps
+	\item \textbf{BP-Net:} An existing pre-trained model on Kitti data was loaded. BP-Net and Depth-Anything models were applied to generate depth maps from the KITTI dataset. Depth maps were processed to ensure consistency and accuracy prior to use. The output was 1000 depthmaps
 	
 	\item \textbf{Depthaynthing v1 \& 2 and Metric Depth:} The depthaynthing networks provide also trained models for kitti. For all depthanything networks there aret three version availible. The smallm, base and large model. For similiar results the basemodel was loaded in each case.   
 	
-	\item \textbf{Dataset Preparation:} RGB images were paired with the generated depth maps to create a comprehensive training dataset for the pix2pix model.
+	\item \textbf{Dataset preparation:} RGB images were paired with the generated depth maps to create a comprehensive training dataset for the pix2pix model.
 	\end{itemize}
 \begin{figure}[!ht]
 	\centering
@@ -67,50 +63,50 @@ First of all the depth was created thru rgb pictures taken from "The KITTI Datas
 	\caption{RGB and created depth (BP, Deptanything v1,2 and metric v2)}
 	\label{all_depths}
 \end{figure}
-The three dephtmaps sources (shown in picture \ref{all_depths}) have different properties. The BP Net has very little resultion in the nearfield. The depthanything depthmaps are both more dense in the nearfield but the far distant objects in backround are missing. The version 2 has better edge visualations and some distance objects like the sign on the lefthand side or the car are better visibel. The metric depth has the best focus on the farplane from all of them but near field has very little informtion. 
+The four depth maps sources (shown in figure \ref{all_depths}) have different properties. The BP-Net has very little near-field resolution. The depthanything depthmaps are both more dense in the near field, but lack the distant objects. Version 2 has better edge visualisations and some distant objects like the sign on the left or the car are better visible. The metric depth has the best focus on the far field, but has very little  information in near field. 
 
 \newpage
 \subsection{Model Training}\label{modeltraining}
 \begin{itemize}
-	\item \textbf{pix2pix Configuration:} The pix2pix architecture was adapted to accept RGB images and depth maps (4 dim.) as inputs to be able to scan input channel seperately and to avoid loss by overlaying rgb and depth images. The unmodified pix2pix was trained to predict LiDAR intensity values based on depthmaps inputs. The 4 dimensional pix2pix was given the input of rgb plus depthmaps.
-	\item \textbf{Training Process:} The training parameters such as learning rate 0.0002000, batch size 1, and number of epochs 20 were set. The model was trained using the prepared dataset in the configuration 1000 pictures divided in 800 train, 100 val, 100 test folders. The input is differnet for the sole depth input and the rgbd input due to not equal running scripts for dividing. This was discoverd after the training and testing runs. Both versions were executed with masking out the pixel value -1 to reduce the areas which are not of interest. The input was crop to a size of 256 time 256  but not scale.
+	\item \textbf{Pix2pix configuration:} The pix2pix architecture was modified to accept RGB images and depthmaps (4 dim.) as inputs to be able to scan the input channel seperately and to avoid losses due to overlaying RBG and depth images. The unmodified pix2pix was trained to predict LiDAR intensity values based on depthmaps inputs. The 4 dimensional pix2pix was given the input of rgb plus depthmaps.
+	\item \textbf{Training process:} Training parameters such as learning rate 0.0002000, batch size 1, and number of epochs 20 were set. The model was trained using the prepared dataset in the configuration 1000 images divided into 800 training, 100 validation, 100 test folders. The input is different for the sole depth input and the RGBD input because the script for dividing are not executed in the same way. This was discovered after the training and test runs. Both versions were run with masked out the pixel value -1 to reduce the areas of no interest. The input was cropped to a size of $256 \times 256$  but not scaled.
 \end{itemize}
 
 \section{Results} \label{results}
 % wandb didnt work so no loss curves availble
 
 %\newline
-This section presents the results of the  experiments using different setups to predict LiDAR intensity. It was  evaluated the performance of several methods, including the seperate depths from BP Net, Depth Anything v1 and v2, as well as metric depth estimation to LiDAR. The other four are RGB plus each of these depths to LiDAR. The returning pictures are crop and the full verions a used as comparison. The crop version is the right part of the full resolution ($1216 \times 352$) images. For the 4 dimensional runs the cropped LiDAR groundtruth for better visualsation because this pix2pix version gives these extra outputs. The results from eight runs are summarized below:
+This section presents the results of the experiments using different setups to predict LiDAR intensity. The performance of several methods was evaluated, including the separate depths from BP-Net, Depth-Anything v1 and v2, and metric depth estimation to LiDAR. The other four are RGB plus each of these depths to LiDAR. The images returned are crop and full versions for comparison. The cropped version is the right part of the full resolution ($1216 \ times 352$) images. For the 4 dimensional runs, the cropped LiDAR groundtruth is used for better visualisation as this pix2pix version gives these additional outputs. The results of eight runs are summarised below:
 %\newpage
-\subsection{Depth BP Net to LiDAR}
+\subsection{Depth BP-Net to LiDAR}
 
-Using only the depth maps generated by BP Net (Figure \ref{bp_results}), without accompanying RGB images, the model was trained to predict LiDAR intensity. This approach yielded shows some visible prediction.
+Using only the depth maps generated by BP-Net (Figure \ref{bp_results}), without accompanying RGB images, the model was trained to predict LiDAR intensity. This approach resulted in some visible predictions.
 \begin{figure}[!ht]
 	\centering
 	%\scalebox{2}[1]{\includegraphics[width=0.2\textwidth]{abb/rgb/0000000030.png}}
 	\includegraphics[width=0.4\textwidth]{abb/singleruns/bp/depth/0000000070.png}
 	\includegraphics[width=0.4\textwidth]{abb/singleruns/bp/lidar/0000000070.png}
 	\includegraphics[width=0.3\textwidth]{abb/singleruns/bp/result/0000000070.png}
-	\caption{RGB LiDAR and predicted LiDAR.}
+	\caption{Depth BP-Net LiDAR and predicted LiDAR.}
 	\label{bp_results}
 \end{figure}
 \newpage
-\subsection{Depth Anything v1 to LiDAR}
+\subsection{Depth-Anything v1 to LiDAR}
 
-The Depth Anything v1 model (Figure \ref{v1_results}) provided initial depth estimations using large-scale unlabeled data. When used to predict LiDAR intensity, this model showed results that are more familiar with depth maps and not LiDAR intensity.
+The Depth-Anything v1 model (Figure \ref{v1_results}) provided initial depth estimates using large-scale unlabelled data. When used to predict LiDAR intensity, this model showed results that are more in line with depth maps rather than LiDAR intensity.
 \begin{figure}[!ht]
 	\centering
 	%\scalebox{2}[1]{\includegraphics[width=0.2\textwidth]{abb/rgb/0000000030.png}}
 	\includegraphics[width=0.4\textwidth]{abb/singleruns/v1/depth/0000000070.png}
 	\includegraphics[width=0.4\textwidth]{abb/singleruns/v1/lidar/0000000070.png}
 	\includegraphics[width=0.3\textwidth]{abb/singleruns/v1/result/0000000070_depth.png}
-	\caption{RGB LiDAR and predicted LiDAR.}
+	\caption{Depth depthanything v1 LiDAR and predicted LiDAR.}
 	\label{v1_results}
 \end{figure}
 \newpage
-\subsection{Depth Anything v2 to LiDAR}
+\subsection{Depth-Anything v2 to LiDAR}
 
-The Depth Anything v2 (Figure \ref{v2_results}) shows almost the same result like v1. It could be possible that pix2pix tried to learn LiDAR to depth but the datasets and the training settings were correct for that.
+The Depth-Anything v2 (Figure \ref{v2_results}) shows almost the same result as v1. It could be that pix2pix was trying to learn LiDAR to depth, but the datasets and the training settings were correct for that.
 \begin{figure}[!ht]
 	\centering
 	%\scalebox{2}[1]{\includegraphics[width=0.2\textwidth]{abb/rgb/0000000030.png}}
@@ -122,20 +118,19 @@ The Depth Anything v2 (Figure \ref{v2_results}) shows almost the same result lik
 \end{figure}
 \newpage
 \subsection{Metric Depth to LiDAR}
-
-In this approach, precise metric depth measurements (Figure \ref{metric_results}) were used to predict LiDAR intensity. This method significantly shows some good prediction of the LiDAR intensity.
+In this approach, accurate metric depth measurements (Figure \ref{metric_results}) were used to predict LiDAR intensity. This method significantly shows a good prediction of LiDAR intensity.
 \begin{figure}[!ht]
 	\centering
 	%\scalebox{2}[1]{\includegraphics[width=0.2\textwidth]{abb/rgb/0000000030.png}}
 	\includegraphics[width=0.4\textwidth]{abb/singleruns/metricv2/depth/0000000070.png}
 	\includegraphics[width=0.4\textwidth]{abb/singleruns/metricv2/lidar/0000000070.png}
 	\includegraphics[width=0.3\textwidth]{abb/singleruns/metricv2/result/0000000070.png}
-	\caption{Metricdepth LiDAR and predicted LiDAR.}
+	\caption{Metric depth LiDAR and predicted LiDAR.}
 	\label{metric_results}
 \end{figure}
 \newpage	
-\subsection{RGB plus BP Net to LiDAR}
-In this setup (Figure \ref{bp_rgbd}), RGB images were combined with depth maps generated by the BP Net model to predict LiDAR intensity. The integration of depth information from BP Net significantly displayes some correct prediction accuracy compared to using Depth maps images alone. The cars for instance are barely visibile and the backround is almost filled wrong perhaps due to the masking.
+\subsection{RGB plus BP-Net to LiDAR}
+In this setup (Figure \ref{bp_rgbd}), RGB images were combined with depth maps generated by the BP-Net model to predict LiDAR intensity. The integration of depth information from BP-Net shows a significant increase in prediction accuracy compared to using depth map images alone. For example, the cars are barely visible and the background is almost incorrectly filled, perhaps due to masking.
 \begin{figure}[!ht]
 	\centering
 	% Erstes Bild
@@ -173,12 +168,12 @@ In this setup (Figure \ref{bp_rgbd}), RGB images were combined with depth maps g
 		\label{fig:bp_fake_lidar}
 	\end{subfigure}
 	
-	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the BP Net setup.}
+	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the BP-Net setup.}
 	\label{bp_rgbd}
 \end{figure}
 \newpage
-\subsection{RGB plus Depth Anything v1 to LiDAR}
-Combining RGB images with depth maps from Depth Anything v1 (Figure \ref{v1_rgbd}), the model achieved better performance than using depth alone. The fusion of RGB and depth data provided a more comprehensive input, resulting in an LiDAR intensity but it show  reselemblest to the groundtruth. The end of the street is cleary visible.
+\subsection{RGB plus Depth-Anything v1 to LiDAR}
+When RGB images were combined with depth maps from Depth-Anything v1 (Figure \ref{v1_rgbd}), the model performed better than using depth alone. The fusion of RGB and depth data provided a more comprehensive input, resulting in a LiDAR intensity that is close to the ground truth. The end of the road is clearly visible.
 \begin{figure}[!ht]
 	\centering
 	% Erstes Bild
@@ -216,12 +211,12 @@ Combining RGB images with depth maps from Depth Anything v1 (Figure \ref{v1_rgbd
 		\label{fig:v1_fake_lidar}
 	\end{subfigure}
 	
-	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the Depth Anything v1 setup.}
+	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the Depth-Anything v1 setup.}
 	\label{v1_rgbd}
 \end{figure}
 \newpage
-\subsection{RGB plus Depth Anything v2 to LiDAR}
-RGB images paired with depth maps from Depth Anything v2 (Figure \ref{v2_results}) show a better predection than v1. The sign in the groundtruth is more visible due to better depthmaps resolution of the depthanything v2.
+\subsection{RGB plus Depth-Anything v2 to LiDAR}
+RGB images paired with Depth-Anything v2 depth maps (Figure \ref{v2_results}) show better prediction than v1. The sign in the ground  truth is more visible due to the better depth map resolution of Depth-Anything v2.
 \begin{figure}[!ht]
 	\centering
 	% Erstes Bild
@@ -259,12 +254,12 @@ RGB images paired with depth maps from Depth Anything v2 (Figure \ref{v2_results
 		\label{v2}
 	\end{subfigure}
 	
-	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the Depth Anything v2 setup.}
+	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the Depth-Anything v2 setup.}
 	\label{v2_rgbd}
 \end{figure}
 \subsection{RGB plus Metric Depth to LiDAR}
 
-The combination of RGB images with precise metric (Figure \ref{metric_rgbd})depth measurements led to the most accurate predictions of LiDAR intensity. This setup utilized the strengths of both RGB data and metric depth, achieving the best results across all runs. The conturs of the cars on the right side are visible. 
+The combination of accurate metric (Figure \ref{metric_rgbd}) depth measurements produced the most accurate predictions of LiDAR intensity. This setup exploited the strengths of both RGB data and metric depth, giving the best results in all runs. The contours of the cars are visible on the right. 
 
 \begin{figure}[!ht]
 	\centering
@@ -308,12 +303,12 @@ The combination of RGB images with precise metric (Figure \ref{metric_rgbd})dept
 	\label{metric_rgbd}
 \end{figure}
 \chapter{Conclusion}
-In conclusion, the results of different depthmaps against LiDAR are showing bad prediction for the for most of the sole depthmaps input. The combine inputs are performing better on the prediction. The comparions are not fully aceptalbe because there were problems with the different output images and mostly not machting samples. Furhtermore did the provide script not work for this installment because the cropped output picture should be in pairs of 4 be stited togehter to get the full image. This leads to an difficult evaltion on the data. \newline \\Overall there are some differnece to be notice dephtanything v2 performeces better dann v1 and the metric depth is better than both. The BP Net shows also some good result. A better approch is to use the same output images and to run without masking for  a more reliable result. Furthermore is the missing of loss function due to not working scripts a big disadvantage for evalation.
-
+In conclusion, the results of the different depthmaps against LiDAR show poor prediction for most of the sole depthmap inputs. The combined inputs perform better in prediction. The comparisons are not fully acceptable because there were problems with the different output images and mostly not machined samples. Also, the provided script did not work for this installation because the cropped output image should be stitched together in pairs of 4 to get the full image. This makes it difficult to evaluate the data. \newline \\Overall, there are some differences to note: depth - v2 performs better than v1, and the metric depth is better than both. The BP net also shows some good results. A better approach is to use the same output images and run without masking for a more reliable result. Also, the lack of loss function due to non-working scripts is a big disadvantage for evaluation.
+\newpage
 \section{Appendix}
 \subsection{RGB to LiDAR}
 
-This are the results for the pix2pix model trained using only RGB images to predict LiDAR intensity. Predicted LiDAR seems to be fine but to concentrate more on the different depths this was left out.
+These are the results for the pix2pix model trained using only RGB images to predict LiDAR intensity. The predicted LiDAR appears to be good, but to focus more on the different depths, this was left out.
 \begin{figure}[!ht]
 	\centering
 	%\scalebox{2}[1]{\includegraphics[width=0.2\textwidth]{abb/rgb/0000000030.png}}

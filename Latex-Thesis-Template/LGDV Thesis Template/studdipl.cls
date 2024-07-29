@@ -134,7 +134,7 @@ Datenverarbeitung, Informatik 9}
 {\LARGE\bf\@title}
 \vspace{1.50cm}
 
-{\large Project report in computer science for sensor simultion challenge}
+{\large Computer Science Project Report for Sensor Simulation Challenge}
 \vspace{1.50cm}
 
 {\small vorgelegt von}\bigskip
@@ -157,9 +157,9 @@ Betreuender Hochschullehrer: Prof. Dr. Marc Stamminger
 \vfill
 \vfill
 
-Beginn der Arbeit:\ \@bdate\bigskip
+%Beginn der Arbeit:\ \@bdate\bigskip
 
-Abgabe der Arbeit:\ \@edate
+%Abgabe der Arbeit:\ \@edate
 \vfill
 
 \end{center}
