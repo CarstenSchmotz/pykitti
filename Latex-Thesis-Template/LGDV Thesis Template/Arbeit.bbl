@@ -19,6 +19,84 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{Geiger2013IJRR}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=06133052ac3c14a188601b82783cd4f7}{%
+           family={Geiger},
+           familyi={G\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f594289a77a4b801a7156edc29235ad8}{%
+           family={Lenz},
+           familyi={L\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ca1de2d211c8e4a0f976b3b90a625cb8}{%
+           family={Stiller},
+           familyi={S\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bc58c1e920023b071a4d0695299cf804}{%
+           family={Urtasun},
+           familyi={U\bibinitperiod},
+           given={Raquel},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ed1132e2b009ef637750997288e3249}
+      \strng{fullhash}{5a983328f9e192b0dde84b863e9f7f4e}
+      \strng{fullhashraw}{5a983328f9e192b0dde84b863e9f7f4e}
+      \strng{bibnamehash}{0ed1132e2b009ef637750997288e3249}
+      \strng{authorbibnamehash}{0ed1132e2b009ef637750997288e3249}
+      \strng{authornamehash}{0ed1132e2b009ef637750997288e3249}
+      \strng{authorfullhash}{5a983328f9e192b0dde84b863e9f7f4e}
+      \strng{authorfullhashraw}{5a983328f9e192b0dde84b863e9f7f4e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Robotics Research (IJRR)}
+      \field{title}{Vision meets Robotics: The KITTI Dataset}
+      \field{year}{2013}
+    \endentry
+    \entry{isola2017image}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           familyi={I\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9fbb4b31963f07f34a13b375b4997338}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jun-Yan},
+           giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=fbb5fac74ecd20c0f90a3884d6a93cdf}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Tinghui},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5a663b27298722834a8cf09bb93d8c94}{%
+           family={Efros},
+           familyi={E\bibinitperiod},
+           given={Alexei\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{fullhash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{fullhashraw}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{bibnamehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{authorbibnamehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{authornamehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{authorfullhash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{authorfullhashraw}{18664a8c078ce7dff4c499de4e40bf2f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Vision and Pattern Recognition (CVPR), 2017 IEEE Conference on}
+      \field{title}{Image-to-Image Translation with Conditional Adversarial Networks}
+      \field{year}{2017}
+    \endentry
     \entry{saxena2008depth}{article}{}{}
       \name{author}{3}{}{%
         {{hash=644d8ccbbb3e24c18e90af8f119e95c2}{%
@@ -59,6 +137,50 @@
       \verb{doi}
       \verb 10.1007/s11263-007-0071-y
       \endverb
+    \endentry
+    \entry{BP-Net}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=d0b3008e85b1a8b38f46556abf1791c7}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=00ee2d477653991eb292efde021ab361}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Fei-Peng},
+           giveni={F\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=679ba782b18a5f02616923f906bc5390}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Boshi},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2bb35bf59aaca26e59bbdb0d0192f3b3}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2b6a47983313aca5e9c798cbdd6b4df6}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc045ab9b07689deec353d08181e5254}
+      \strng{fullhash}{25b39d65c30866c7bd865d4f9610143e}
+      \strng{fullhashraw}{25b39d65c30866c7bd865d4f9610143e}
+      \strng{bibnamehash}{cc045ab9b07689deec353d08181e5254}
+      \strng{authorbibnamehash}{cc045ab9b07689deec353d08181e5254}
+      \strng{authornamehash}{cc045ab9b07689deec353d08181e5254}
+      \strng{authorfullhash}{25b39d65c30866c7bd865d4f9610143e}
+      \strng{authorfullhashraw}{25b39d65c30866c7bd865d4f9610143e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CVPR}
+      \field{title}{Bilateral Propagation Network for Depth Completion}
+      \field{year}{2024}
     \endentry
     \entry{depth_anything_v2}{article}{}{}
       \name{author}{7}{}{%
@@ -164,6 +286,45 @@
       \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{title}{Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data}
       \field{year}{2024}
+    \endentry
+    \entry{CycleGAN2017}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=9fbb4b31963f07f34a13b375b4997338}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jun-Yan},
+           giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=b036e0ed5c21929ab46890b9a1033163}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Taesung},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           familyi={I\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5a663b27298722834a8cf09bb93d8c94}{%
+           family={Efros},
+           familyi={E\bibinitperiod},
+           given={Alexei\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{fullhash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{fullhashraw}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{bibnamehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{authorbibnamehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{authornamehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{authorfullhash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{authorfullhashraw}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Vision (ICCV), 2017 IEEE International Conference on}
+      \field{title}{Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks}
+      \field{year}{2017}
     \endentry
   \enddatalist
 \endrefsection

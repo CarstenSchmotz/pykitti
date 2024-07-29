@@ -7,11 +7,9 @@ LiDAR senors provide critical depth information for autonomous driving and robot
 \section{Contribution}
 This project explores the use of the Pix2Pix network to predict LiDAR intensity maps by leveraging RGB images and depth maps as additional inputs.
 \section{Related Work}
-DeptAnything Models: \newline DepthAnything represents a significant advancement in monocular depth estimation by leveraging both labeled and unlabeled data at a large scale. Trained on 1.5 million labeled images and over 62 million unlabeled images, DepthAnything achieves state-of-the-art performance in depth estimation tasks. The model excels in both zero-shot relative and metric depth estimation, outperforming previous models such as MiDaS v3.1 and ZoeDepth. 
-\newline
-version 2
-\newline
-3D Reconstruction Techniques: 3D reconstruction is a broad field focused on creating three-dimensional models from two-dimensional images or depth data. Techniques in 3D reconstruction include methods like structure-from-motion (SfM), multi-view stereo (MVS), and volumetric approaches. These techniques aim to generate accurate 3D representations of scenes or objects from multiple views or depth sensors.
+\textbf{BP Net (Bilateral Propagation Network):} is a neural network architecture designed for depth completion task. It generates dense depth maps from sparse data \cite{BP-Net}. \\
+\newline \textbf{DeptAnything Models:}  DepthAnything represents a significant advancement in monocular depth estimation by leveraging both labeled and unlabeled data at a large scale \cite{depthanything}. There are two version availble the second one has a better accuracy and robustness of depth estimaions \cite{depth_anything_v2}. Furthermore are these networks cabible to perform metric depth to provide distance measurements from images.
+\\ \textbf{3D Reconstruction Techniques:} 3D reconstruction focused on creating three-dimensional models from two-dimensional images or depth data. Techniques in 3D reconstruction include methods like structure-from-motion (SfM) and multi-view stereo (MVS). These techniques aim to generate accurate 3D representations of scenes or objects from multiple views or depth sensors \cite{saxena2008depth}.
 
 %\chapter{Preparations}
 %used google colab, pix2pix network getting the right input, pix2pix problems
@@ -24,11 +22,11 @@ version 2
 %pix2pix model with modified data loader to get 4 dim. input rgb plus depth
 %used base model for depthanything
 %The setup for this project involved configuring a series of models and datasets to predict LiDAR intensity from RGB and depth images. The key components and their roles are outlined below:
-First of all the depth was created thru rgb pictures taken from "The KITTI Dataset". In order to get a great variatyof depth for comparison Bilateral Propagation Network (BP Net), Depthanything v1 \& 2 and metric v2 was used. The metric depth v1 was not used because it did not run intime.
+First of all the depth was created thru rgb pictures taken from "The KITTI Dataset" \cite{Geiger2013IJRR}. In order to get a great variatyof depth for comparison Bilateral Propagation Network (BP Net), Depthanything v1 \& 2 and metric v2 was used. The metric depth v1 was not used because it did not run intime.
 \subsection{Bilateral Propagation Network (BP Net)}
 \begin{itemize}
 	\item \textbf{Purpose:} Used for depth completion to improve depth maps from incomplete or noisy data.
-	\item \textbf{Dataset:} The input were raw data from kitti with a depth completion set already availible. 
+	\item \textbf{Dataset:} The input was raw data from kitti with a depth completion set already availible. 
 \end{itemize}
 
 \subsection{Depth Anything Models}
@@ -44,7 +42,7 @@ First of all the depth was created thru rgb pictures taken from "The KITTI Datas
 
 \subsection{Pix2pix Network}
 \begin{itemize}
-	\item \textbf{Purpose:} Image to Image processing to predict LiDAR intensity from RGB and depth images.
+	\item \textbf{Purpose:} Image to Image processing to predict LiDAR intensity from RGB and depth images \cite{CycleGAN2017} \cite{isola2017image}. 
 	\item \textbf{Training Data:} RGB and depth pairs from the KITTI dataset.
 	Eight different input data variations were used see in Chapter \ref{results}.
 \end{itemize}
@@ -316,8 +314,6 @@ In conclusion, the results of different depthmaps against LiDAR are showing bad 
 \subsection{RGB to LiDAR}
 
 This are the results for the pix2pix model trained using only RGB images to predict LiDAR intensity. Predicted LiDAR seems to be fine but to concentrate more on the different depths this was left out.
-
-Here is a citation for the Depth Anything paper \cite{depthanything}, its version 2 \cite{depth_anything_v2}, and for the paper by Saxena et al. \cite{saxena2008depth}
 \begin{figure}[!ht]
 	\centering
 	%\scalebox{2}[1]{\includegraphics[width=0.2\textwidth]{abb/rgb/0000000030.png}}
