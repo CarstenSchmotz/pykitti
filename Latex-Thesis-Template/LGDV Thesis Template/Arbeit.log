@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  29 JUL 2024 12:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  29 JUL 2024 14:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1526,19 +1526,19 @@ Package pdftex.def Info: abb/network/0000000077metric.png  used on input line 6
 [6 <./abb/network/0000000077.png (PNG copy)> <./abb/network/0000000077bp.png (P
 NG copy)> <./abb/network/0000000077v1.png (PNG copy)> <./abb/network/0000000077
 v2.png (PNG copy)> <./abb/network/0000000077metric.png (PNG copy)>]
-<abb/singleruns/bp/depth/0000000070.png, id=191, 1220.56pt x 353.32pt>
+<abb/singleruns/bp/depth/0000000070.png, id=192, 1220.56pt x 353.32pt>
 File: abb/singleruns/bp/depth/0000000070.png Graphic file (type png)
 <use abb/singleruns/bp/depth/0000000070.png>
 Package pdftex.def Info: abb/singleruns/bp/depth/0000000070.png  used on input 
 line 93.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/bp/lidar/0000000070.png, id=192, 1220.56pt x 353.32pt>
+<abb/singleruns/bp/lidar/0000000070.png, id=193, 1220.56pt x 353.32pt>
 File: abb/singleruns/bp/lidar/0000000070.png Graphic file (type png)
 <use abb/singleruns/bp/lidar/0000000070.png>
 Package pdftex.def Info: abb/singleruns/bp/lidar/0000000070.png  used on input 
 line 94.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/bp/result/0000000070.png, id=193, 256.96pt x 256.96pt>
+<abb/singleruns/bp/result/0000000070.png, id=194, 256.96pt x 256.96pt>
 File: abb/singleruns/bp/result/0000000070.png Graphic file (type png)
 <use abb/singleruns/bp/result/0000000070.png>
 Package pdftex.def Info: abb/singleruns/bp/result/0000000070.png  used on input
@@ -1547,19 +1547,19 @@ Package pdftex.def Info: abb/singleruns/bp/result/0000000070.png  used on input
 
 
 [7]
-<abb/singleruns/v1/depth/0000000070.png, id=198, 1220.56pt x 353.32pt>
+<abb/singleruns/v1/depth/0000000070.png, id=202, 1220.56pt x 353.32pt>
 File: abb/singleruns/v1/depth/0000000070.png Graphic file (type png)
 <use abb/singleruns/v1/depth/0000000070.png>
 Package pdftex.def Info: abb/singleruns/v1/depth/0000000070.png  used on input 
 line 106.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/v1/lidar/0000000070.png, id=199, 1220.56pt x 353.32pt>
+<abb/singleruns/v1/lidar/0000000070.png, id=203, 1220.56pt x 353.32pt>
 File: abb/singleruns/v1/lidar/0000000070.png Graphic file (type png)
 <use abb/singleruns/v1/lidar/0000000070.png>
 Package pdftex.def Info: abb/singleruns/v1/lidar/0000000070.png  used on input 
 line 107.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/v1/result/0000000070_depth.png, id=200, 256.96pt x 256.96pt>
+<abb/singleruns/v1/result/0000000070_depth.png, id=204, 256.96pt x 256.96pt>
 File: abb/singleruns/v1/result/0000000070_depth.png Graphic file (type png)
 <use abb/singleruns/v1/result/0000000070_depth.png>
 Package pdftex.def Info: abb/singleruns/v1/result/0000000070_depth.png  used on
@@ -1570,19 +1570,19 @@ Package pdftex.def Info: abb/singleruns/v1/result/0000000070_depth.png  used on
 [8 <./abb/singleruns/bp/depth/0000000070.png (PNG copy)> <./abb/singleruns/bp/l
 idar/0000000070.png (PNG copy)> <./abb/singleruns/bp/result/0000000070.png (PNG
  copy)>]
-<abb/singleruns/v2/depth/0000000070.png, id=206, 1220.56pt x 353.32pt>
+<abb/singleruns/v2/depth/0000000070.png, id=211, 1220.56pt x 353.32pt>
 File: abb/singleruns/v2/depth/0000000070.png Graphic file (type png)
 <use abb/singleruns/v2/depth/0000000070.png>
 Package pdftex.def Info: abb/singleruns/v2/depth/0000000070.png  used on input 
 line 119.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/v2/lidar/0000000070.png, id=207, 1220.56pt x 353.32pt>
+<abb/singleruns/v2/lidar/0000000070.png, id=212, 1220.56pt x 353.32pt>
 File: abb/singleruns/v2/lidar/0000000070.png Graphic file (type png)
 <use abb/singleruns/v2/lidar/0000000070.png>
 Package pdftex.def Info: abb/singleruns/v2/lidar/0000000070.png  used on input 
 line 120.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/v2/result/0000000070.png, id=208, 256.96pt x 256.96pt>
+<abb/singleruns/v2/result/0000000070.png, id=213, 256.96pt x 256.96pt>
 File: abb/singleruns/v2/result/0000000070.png Graphic file (type png)
 <use abb/singleruns/v2/result/0000000070.png>
 Package pdftex.def Info: abb/singleruns/v2/result/0000000070.png  used on input
@@ -1593,19 +1593,19 @@ Package pdftex.def Info: abb/singleruns/v2/result/0000000070.png  used on input
 [9 <./abb/singleruns/v1/depth/0000000070.png (PNG copy)> <./abb/singleruns/v1/l
 idar/0000000070.png (PNG copy)> <./abb/singleruns/v1/result/0000000070_depth.pn
 g (PNG copy)>]
-<abb/singleruns/metricv2/depth/0000000070.png, id=215, 1220.56pt x 353.32pt>
+<abb/singleruns/metricv2/depth/0000000070.png, id=221, 1220.56pt x 353.32pt>
 File: abb/singleruns/metricv2/depth/0000000070.png Graphic file (type png)
 <use abb/singleruns/metricv2/depth/0000000070.png>
 Package pdftex.def Info: abb/singleruns/metricv2/depth/0000000070.png  used on 
 input line 132.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/metricv2/lidar/0000000070.png, id=216, 1220.56pt x 353.32pt>
+<abb/singleruns/metricv2/lidar/0000000070.png, id=222, 1220.56pt x 353.32pt>
 File: abb/singleruns/metricv2/lidar/0000000070.png Graphic file (type png)
 <use abb/singleruns/metricv2/lidar/0000000070.png>
 Package pdftex.def Info: abb/singleruns/metricv2/lidar/0000000070.png  used on 
 input line 133.
 (pdftex.def)             Requested size: 234.87749pt x 67.9887pt.
-<abb/singleruns/metricv2/result/0000000070.png, id=217, 256.96pt x 256.96pt>
+<abb/singleruns/metricv2/result/0000000070.png, id=223, 256.96pt x 256.96pt>
 File: abb/singleruns/metricv2/result/0000000070.png Graphic file (type png)
 <use abb/singleruns/metricv2/result/0000000070.png>
 Package pdftex.def Info: abb/singleruns/metricv2/result/0000000070.png  used on
@@ -1616,19 +1616,19 @@ Package pdftex.def Info: abb/singleruns/metricv2/result/0000000070.png  used on
 [10 <./abb/singleruns/v2/depth/0000000070.png (PNG copy)> <./abb/singleruns/v2/
 lidar/0000000070.png (PNG copy)> <./abb/singleruns/v2/result/0000000070.png (PN
 G copy)>]
-<abb/plusdepthruns/bp/rgb/0000000069.png, id=223, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/bp/rgb/0000000069.png, id=230, 1220.56pt x 353.32pt>
 File: abb/plusdepthruns/bp/rgb/0000000069.png Graphic file (type png)
 <use abb/plusdepthruns/bp/rgb/0000000069.png>
 Package pdftex.def Info: abb/plusdepthruns/bp/rgb/0000000069.png  used on input
  line 146.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/bp/depth/0000000069.png, id=224, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/bp/depth/0000000069.png, id=231, 1220.56pt x 353.32pt>
 File: abb/plusdepthruns/bp/depth/0000000069.png Graphic file (type png)
 <use abb/plusdepthruns/bp/depth/0000000069.png>
 Package pdftex.def Info: abb/plusdepthruns/bp/depth/0000000069.png  used on inp
 ut line 156.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/bp/result/0000000069_real_B.png, id=225, 256.96pt x 256.96pt
+<abb/plusdepthruns/bp/result/0000000069_real_B.png, id=232, 256.96pt x 256.96pt
 >
 File: abb/plusdepthruns/bp/result/0000000069_real_B.png Graphic file (type png)
 
@@ -1636,7 +1636,7 @@ File: abb/plusdepthruns/bp/result/0000000069_real_B.png Graphic file (type png)
 Package pdftex.def Info: abb/plusdepthruns/bp/result/0000000069_real_B.png  use
 d on input line 166.
 (pdftex.def)             Requested size: 117.43874pt x 117.43845pt.
-<abb/plusdepthruns/bp/result/0000000069_fake_B.png, id=226, 256.96pt x 256.96pt
+<abb/plusdepthruns/bp/result/0000000069_fake_B.png, id=233, 256.96pt x 256.96pt
 >
 File: abb/plusdepthruns/bp/result/0000000069_fake_B.png Graphic file (type png)
 
@@ -1649,19 +1649,19 @@ d on input line 173.
 [11 <./abb/singleruns/metricv2/depth/0000000070.png (PNG copy)> <./abb/singleru
 ns/metricv2/lidar/0000000070.png (PNG copy)> <./abb/singleruns/metricv2/result/
 0000000070.png (PNG copy)>]
-<abb/plusdepthruns/v1/rgb/0000000070.png, id=232, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/v1/rgb/0000000070.png, id=240, 1220.56pt x 353.32pt>
 File: abb/plusdepthruns/v1/rgb/0000000070.png Graphic file (type png)
 <use abb/plusdepthruns/v1/rgb/0000000070.png>
 Package pdftex.def Info: abb/plusdepthruns/v1/rgb/0000000070.png  used on input
  line 189.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/v1/depth/0000000070.png, id=233, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/v1/depth/0000000070.png, id=241, 1220.56pt x 353.32pt>
 File: abb/plusdepthruns/v1/depth/0000000070.png Graphic file (type png)
 <use abb/plusdepthruns/v1/depth/0000000070.png>
 Package pdftex.def Info: abb/plusdepthruns/v1/depth/0000000070.png  used on inp
 ut line 199.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/v1/result/0000000070_real_B.png, id=234, 256.96pt x 256.96pt
+<abb/plusdepthruns/v1/result/0000000070_real_B.png, id=242, 256.96pt x 256.96pt
 >
 File: abb/plusdepthruns/v1/result/0000000070_real_B.png Graphic file (type png)
 
@@ -1669,7 +1669,7 @@ File: abb/plusdepthruns/v1/result/0000000070_real_B.png Graphic file (type png)
 Package pdftex.def Info: abb/plusdepthruns/v1/result/0000000070_real_B.png  use
 d on input line 209.
 (pdftex.def)             Requested size: 117.43874pt x 117.43845pt.
-<abb/plusdepthruns/v1/result/0000000070_fake_B.png, id=235, 256.96pt x 256.96pt
+<abb/plusdepthruns/v1/result/0000000070_fake_B.png, id=243, 256.96pt x 256.96pt
 >
 File: abb/plusdepthruns/v1/result/0000000070_fake_B.png Graphic file (type png)
 
@@ -1683,19 +1683,19 @@ d on input line 216.
 /bp/depth/0000000069.png (PNG copy)> <./abb/plusdepthruns/bp/result/0000000069_
 real_B.png (PNG copy)> <./abb/plusdepthruns/bp/result/0000000069_fake_B.png (PN
 G copy)>]
-<abb/plusdepthruns/v2/rgb/0000000070.png, id=243, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/v2/rgb/0000000070.png, id=252, 1220.56pt x 353.32pt>
 File: abb/plusdepthruns/v2/rgb/0000000070.png Graphic file (type png)
 <use abb/plusdepthruns/v2/rgb/0000000070.png>
 Package pdftex.def Info: abb/plusdepthruns/v2/rgb/0000000070.png  used on input
  line 232.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/v2/depth/0000000070.png, id=244, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/v2/depth/0000000070.png, id=253, 1220.56pt x 353.32pt>
 File: abb/plusdepthruns/v2/depth/0000000070.png Graphic file (type png)
 <use abb/plusdepthruns/v2/depth/0000000070.png>
 Package pdftex.def Info: abb/plusdepthruns/v2/depth/0000000070.png  used on inp
 ut line 242.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/v2/result/0000000070_real_B.png, id=245, 256.96pt x 256.96pt
+<abb/plusdepthruns/v2/result/0000000070_real_B.png, id=254, 256.96pt x 256.96pt
 >
 File: abb/plusdepthruns/v2/result/0000000070_real_B.png Graphic file (type png)
 
@@ -1703,7 +1703,7 @@ File: abb/plusdepthruns/v2/result/0000000070_real_B.png Graphic file (type png)
 Package pdftex.def Info: abb/plusdepthruns/v2/result/0000000070_real_B.png  use
 d on input line 252.
 (pdftex.def)             Requested size: 117.43874pt x 117.43845pt.
-<abb/plusdepthruns/v2/result/0000000070_fake_B.png, id=246, 256.96pt x 256.96pt
+<abb/plusdepthruns/v2/result/0000000070_fake_B.png, id=255, 256.96pt x 256.96pt
 >
 File: abb/plusdepthruns/v2/result/0000000070_fake_B.png Graphic file (type png)
 
@@ -1711,20 +1711,20 @@ File: abb/plusdepthruns/v2/result/0000000070_fake_B.png Graphic file (type png)
 Package pdftex.def Info: abb/plusdepthruns/v2/result/0000000070_fake_B.png  use
 d on input line 259.
 (pdftex.def)             Requested size: 117.43874pt x 117.43845pt.
-<abb/plusdepthruns/metricv2/rgb/0000000417.png, id=247, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/metricv2/rgb/0000000417.png, id=257, 1220.56pt x 353.32pt>
 File: abb/plusdepthruns/metricv2/rgb/0000000417.png Graphic file (type png)
 <use abb/plusdepthruns/metricv2/rgb/0000000417.png>
 Package pdftex.def Info: abb/plusdepthruns/metricv2/rgb/0000000417.png  used on
  input line 277.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/metricv2/depth/0000000417.png, id=248, 1220.56pt x 353.32pt>
+<abb/plusdepthruns/metricv2/depth/0000000417.png, id=258, 1220.56pt x 353.32pt>
 
 File: abb/plusdepthruns/metricv2/depth/0000000417.png Graphic file (type png)
 <use abb/plusdepthruns/metricv2/depth/0000000417.png>
 Package pdftex.def Info: abb/plusdepthruns/metricv2/depth/0000000417.png  used 
 on input line 287.
 (pdftex.def)             Requested size: 187.89912pt x 54.39203pt.
-<abb/plusdepthruns/metricv2/result/0000000417_real_B.png, id=249, 256.96pt x 25
+<abb/plusdepthruns/metricv2/result/0000000417_real_B.png, id=259, 256.96pt x 25
 6.96pt>
 File: abb/plusdepthruns/metricv2/result/0000000417_real_B.png Graphic file (typ
 e png)
@@ -1732,7 +1732,7 @@ e png)
 Package pdftex.def Info: abb/plusdepthruns/metricv2/result/0000000417_real_B.pn
 g  used on input line 297.
 (pdftex.def)             Requested size: 117.43874pt x 117.43845pt.
-<abb/plusdepthruns/metricv2/result/0000000417_fake_B.png, id=250, 256.96pt x 25
+<abb/plusdepthruns/metricv2/result/0000000417_fake_B.png, id=260, 256.96pt x 25
 6.96pt>
 File: abb/plusdepthruns/metricv2/result/0000000417_fake_B.png Graphic file (typ
 e png)
@@ -1757,19 +1757,19 @@ thruns/metricv2/depth/0000000417.png (PNG copy)> <./abb/plusdepthruns/metricv2/
 result/0000000417_real_B.png (PNG copy)> <./abb/plusdepthruns/metricv2/result/0
 000000417_fake_B.png (PNG copy)>]
 Chapter 4.
-<abb/singleruns/rgb/rgb/0000000070.png, id=270, 1220.56pt x 353.32pt>
+<abb/singleruns/rgb/rgb/0000000070.png, id=279, 1220.56pt x 353.32pt>
 File: abb/singleruns/rgb/rgb/0000000070.png Graphic file (type png)
 <use abb/singleruns/rgb/rgb/0000000070.png>
 Package pdftex.def Info: abb/singleruns/rgb/rgb/0000000070.png  used on input l
 ine 322.
 (pdftex.def)             Requested size: 140.92792pt x 40.78998pt.
-<abb/singleruns/rgb/lidar/0000000030.png, id=271, 1220.56pt x 353.32pt>
+<abb/singleruns/rgb/lidar/0000000030.png, id=280, 1220.56pt x 353.32pt>
 File: abb/singleruns/rgb/lidar/0000000030.png Graphic file (type png)
 <use abb/singleruns/rgb/lidar/0000000030.png>
 Package pdftex.def Info: abb/singleruns/rgb/lidar/0000000030.png  used on input
  line 323.
 (pdftex.def)             Requested size: 140.92792pt x 40.78998pt.
-<abb/singleruns/rgb/result/0000000070.png, id=272, 256.96pt x 256.96pt>
+<abb/singleruns/rgb/result/0000000070.png, id=281, 256.96pt x 256.96pt>
 File: abb/singleruns/rgb/result/0000000070.png Graphic file (type png)
 <use abb/singleruns/rgb/result/0000000070.png>
 Package pdftex.def Info: abb/singleruns/rgb/result/0000000070.png  used on inpu
@@ -1811,7 +1811,7 @@ Here is how much of TeX's memory you used:
  70122 multiletter control sequences out of 15000+600000
  569724 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,101p,729b,1343s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,101p,742b,1343s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Besitzer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
 crm1095.pk><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/t
@@ -1824,11 +1824,12 @@ fb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmr12.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmr9.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Besitzer/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Besitzer/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Arbeit.pdf (22 pages, 7560175 bytes).
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Besitzer/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Besitzer/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Arbeit.pdf (22 pages, 7570445 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
+ 387 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 500000)
  401 words of extra memory for PDF output out of 10000 (max. 10000000)
 
