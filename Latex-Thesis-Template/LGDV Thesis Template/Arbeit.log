@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  29 JUL 2024 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  29 JUL 2024 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1757,6 +1757,11 @@ thruns/metricv2/depth/0000000417.png (PNG copy)> <./abb/plusdepthruns/metricv2/
 result/0000000417_real_B.png (PNG copy)> <./abb/plusdepthruns/metricv2/result/0
 000000417_fake_B.png (PNG copy)>]
 Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
 <abb/singleruns/rgb/rgb/0000000070.png, id=279, 1220.56pt x 353.32pt>
 File: abb/singleruns/rgb/rgb/0000000070.png Graphic file (type png)
 <use abb/singleruns/rgb/rgb/0000000070.png>
@@ -1779,11 +1784,11 @@ t line 324.
 
 [16
 
- <./abb/singleruns/rgb/rgb/0000000070.png (PNG copy)> <./abb/singleruns/rgb/LiD
-AR/0000000030.png (PNG copy)> <./abb/singleruns/rgb/result/0000000070.png (PNG 
-copy)>]
+]
 
-[17]
+[17 <./abb/singleruns/rgb/rgb/0000000070.png (PNG copy)> <./abb/singleruns/rgb/
+LiDAR/0000000030.png (PNG copy)> <./abb/singleruns/rgb/result/0000000070.png (P
+NG copy)>]
 
 [18
 
@@ -1813,7 +1818,7 @@ Here is how much of TeX's memory you used:
  70122 multiletter control sequences out of 15000+600000
  569724 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,101p,742b,1343s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,101p,897b,1343s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Besitzer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
 crm1095.pk><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Users/Besitzer/AppData/Local/Programs/MiKTeX/fonts/t
@@ -1829,7 +1834,7 @@ type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Besitzer/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Besitzer/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Besitzer/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Arbeit.pdf (23 pages, 7572527 bytes).
+Output written on Arbeit.pdf (23 pages, 7572695 bytes).
 PDF statistics:
  391 PDF objects out of 1000 (max. 8388607)
  63 named destinations out of 1000 (max. 500000)

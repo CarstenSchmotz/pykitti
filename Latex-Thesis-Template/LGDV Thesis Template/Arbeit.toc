@@ -23,4 +23,4 @@
 \contentsline {chapter}{\numberline {4}Conclusion}{16}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Appendix}{16}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}RGB to LiDAR}{16}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}References}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.2}References}{16}{section.4.2}%
