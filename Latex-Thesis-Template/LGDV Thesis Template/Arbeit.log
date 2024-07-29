@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  29 JUL 2024 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.27)  29 JUL 2024 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1478,7 +1478,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.21 \chapter
-             {Predicting LIDAR Intensity} %from RGB and Depth Images} [3
+             {Predicting LiDAR Intensity} %from RGB and Depth Images} [3
 
 ]
 Chapter 3.
@@ -1763,10 +1763,10 @@ File: abb/singleruns/rgb/rgb/0000000070.png Graphic file (type png)
 Package pdftex.def Info: abb/singleruns/rgb/rgb/0000000070.png  used on input l
 ine 322.
 (pdftex.def)             Requested size: 140.92792pt x 40.78998pt.
-<abb/singleruns/rgb/lidar/0000000030.png, id=280, 1220.56pt x 353.32pt>
-File: abb/singleruns/rgb/lidar/0000000030.png Graphic file (type png)
-<use abb/singleruns/rgb/lidar/0000000030.png>
-Package pdftex.def Info: abb/singleruns/rgb/lidar/0000000030.png  used on input
+<abb/singleruns/rgb/LiDAR/0000000030.png, id=280, 1220.56pt x 353.32pt>
+File: abb/singleruns/rgb/LiDAR/0000000030.png Graphic file (type png)
+<use abb/singleruns/rgb/LiDAR/0000000030.png>
+Package pdftex.def Info: abb/singleruns/rgb/LiDAR/0000000030.png  used on input
  line 323.
 (pdftex.def)             Requested size: 140.92792pt x 40.78998pt.
 <abb/singleruns/rgb/result/0000000070.png, id=281, 256.96pt x 256.96pt>
@@ -1779,11 +1779,13 @@ t line 324.
 
 [16
 
- <./abb/singleruns/rgb/rgb/0000000070.png (PNG copy)> <./abb/singleruns/rgb/lid
-ar/0000000030.png (PNG copy)> <./abb/singleruns/rgb/result/0000000070.png (PNG 
+ <./abb/singleruns/rgb/rgb/0000000070.png (PNG copy)> <./abb/singleruns/rgb/LiD
+AR/0000000030.png (PNG copy)> <./abb/singleruns/rgb/result/0000000070.png (PNG 
 copy)>]
 
-[17
+[17]
+
+[18
 
 ] (Arbeit.lof)
 \tf@lof=\write7
@@ -1791,7 +1793,7 @@ copy)>]
 
 
 
-[18
+[19
 
 ] (Arbeit.aux)
  ***********
@@ -1799,14 +1801,14 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
 Package rerunfilecheck Info: File `Arbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 7693AA12898054217D1A9E890B52F592;4017.
+(rerunfilecheck)             Checksum: 32594ECA70BBDDE46069420204B4E2A5;4017.
 Package logreq Info: Writing requests to 'Arbeit.run.xml'.
 \openout1 = `Arbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47989 strings out of 473903
- 1140055 string characters out of 5725163
+ 47990 strings out of 473903
+ 1140062 string characters out of 5725163
  1977535 words of memory out of 5000000
  70122 multiletter control sequences out of 15000+600000
  569724 words of font info for 78 fonts, out of 8000000 for 9000
@@ -1827,9 +1829,9 @@ type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Besitzer/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Besitzer/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Besitzer/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Arbeit.pdf (22 pages, 7570445 bytes).
+Output written on Arbeit.pdf (23 pages, 7572527 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 391 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  401 words of extra memory for PDF output out of 10000 (max. 10000000)
 
