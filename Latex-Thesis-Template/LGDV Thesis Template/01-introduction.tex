@@ -46,13 +46,13 @@ First of all the depth was created thru rgb pictures taken from "The KITTI Datas
 \begin{itemize}
 	\item \textbf{Purpose:} Image to Image processing to predict LIDAR intensity from RGB and depth images.
 	\item \textbf{Training Data:} RGB and depth pairs from the KITTI dataset.
-	Eight different input data variations were used see in Chapter \ref{modeltraining}.
+	Eight different input data variations were used see in Chapter \ref{results}.
 \end{itemize}
 
 \section{Implementation}
 \subsection{Depth Map Generation}
 \begin{itemize}
-	\item \textbf{BP Net:} An existing pretrained model on kitti data was loaded.Utilized BP Net and Depth Anything models to generate depth maps from the KITTI dataset. Depth maps were processed to ensure consistency and accuracy before use. The output was 1000 depthmaps
+	\item \textbf{BP Net:} An existing pretrained model on kitti data was loaded. Utilized BP Net and Depth Anything models to generate depth maps from the KITTI dataset. Depth maps were processed to ensure consistency and accuracy before use. The output was 1000 depthmaps
 	
 	\item \textbf{Depthaynthing v1 \& 2 and Metric Depth:} The depthaynthing networks provide also trained models for kitti. For all depthanything networks there aret three version availible. The smallm, base and large model. For similiar results the basemodel was loaded in each case.   
 	
@@ -69,22 +69,21 @@ First of all the depth was created thru rgb pictures taken from "The KITTI Datas
 	\caption{RGB and created depth (BP, Deptanything v1,2 and metric v2)}
 	\label{all_depths}
 \end{figure}
-The three dephtmaps sources (shown in picture \ref{all_depths}) have different properties. The BP Net has very little resultion in the nearfield. The depthanything depthmaps are both more dense in the nearfield but the far distant objects in backround are missing. The version 2 has better edge visualations and some distance objects like the sign on the lefthand side or the car is better visibel. The metric depth has the best focus on the farplane from all of them but near field has very little informtion. 
+The three dephtmaps sources (shown in picture \ref{all_depths}) have different properties. The BP Net has very little resultion in the nearfield. The depthanything depthmaps are both more dense in the nearfield but the far distant objects in backround are missing. The version 2 has better edge visualations and some distance objects like the sign on the lefthand side or the car are better visibel. The metric depth has the best focus on the farplane from all of them but near field has very little informtion. 
 
 \newpage
 \subsection{Model Training}\label{modeltraining}
 \begin{itemize}
-	\item \textbf{pix2pix Configuration:} Adapted the pix2pix architecture to accept RGB images and depth maps as inputs. The network was trained to predict LIDAR intensity values based on these inputs.
-	\item \textbf{Training Process:} Configured training parameters such as learning rate, batch size, and number of epochs. The model was trained using the prepared dataset to optimize performance in predicting LIDAR intensity.
-	used kitti step 1000 pictures, 800 train 100 val 100 test
+	\item \textbf{pix2pix Configuration:} The pix2pix architecture was adapted to accept RGB images and depth maps (4 dim.) as inputs to be able to scan input channel seperately and to avoid loss by overlaying rgb and depth images. The unmodified pix2pix was trained to predict LIDAR intensity values based on depthmaps inputs. The 4 dimensional pix2pix was given the input of rgb plus depthmaps.
+	\item \textbf{Training Process:} The training parameters such as learning rate 0.0002000, batch size 1, and number of epochs 20 were set. The model was trained using the prepared dataset in the configuration 1000 pictures divided in 800 train, 100 val, 100 test folders. The input is differnet for the sole depth input and the rgbd input due to not equal running scripts for dividing. This was discoverd after the training and testing runs. Both versions were executed with masking out the pixel value -1 to reduce the areas which are not of interest. The input was crop to a size of 256 time 256  but not scale.
 \end{itemize}
 
 \section{Results} \label{results}
-test run rgb only. depht from depthanything the depth from depthanything v2 and metriv form depthanything v2 6 runs with different solution
+% wandb didnt work so no loss curves availble
 
 %\newline
-In this section, we present the results of our experiments using different setups to predict LIDAR intensity. We evaluated the performance of several methods, including RGB to LIDAR, RGB plus depth from BP Net to LIDAR, depth from BP Net to LIDAR, and combinations involving Depth Anything v1 and v2, as well as metric depth estimation. The results from nine runs are summarized below:
-
+This section presents the results of the  experiments using different setups to predict LIDAR intensity. It was  evaluated the performance of several methods, including depth from BP Net to LIDAR, RGB plus depth from BP Net to LIDAR, , and combinations involving Depth Anything v1 and v2, as well as metric depth estimation. The returning pict The results from eight runs are summarized below:
+%\newpage
 \subsection{Depth BP Net to LIDAR}
 
 Using only the depth maps generated by BP Net, without accompanying RGB images, the model was trained to predict LIDAR intensity. This approach yielded a notable improvement over RGB-only predictions, highlighting the value of depth information in enhancing prediction accuracy.
@@ -95,8 +94,9 @@ Using only the depth maps generated by BP Net, without accompanying RGB images, 
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/bp/lidar/0000000070.png}
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/bp/result/0000000070.png}
 	\caption{RGB LiDAR and predicted LiDAR.}
-	\label{depth}
+	\label{bp_results}
 \end{figure}
+\newpage
 \subsection{Depth Anything v1 to LIDAR}
 
 The Depth Anything v1 model provided initial depth estimations using large-scale unlabeled data. When used to predict LIDAR intensity, this model showed improved results compared to BP Net alone but was less accurate compared to its successor, Depth Anything v2.
@@ -107,8 +107,9 @@ The Depth Anything v1 model provided initial depth estimations using large-scale
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/v1/lidar/0000000070.png}
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/v1/result/0000000070_depth.png}
 	\caption{RGB LiDAR and predicted LiDAR.}
-	\label{depth}
+	\label{v1_results}
 \end{figure}
+\newpage
 \subsection{Depth Anything v2 to LIDAR}
 
 Depth Anything v2, an enhancement over v1, demonstrated superior performance in predicting LIDAR intensity. This version incorporated improvements that resulted in more accurate and reliable depth predictions, leading to better LIDAR intensity estimates.
@@ -119,8 +120,9 @@ Depth Anything v2, an enhancement over v1, demonstrated superior performance in 
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/v2/lidar/0000000070.png}
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/v2/result/0000000070.png}
 	\caption{Depthanything v2 LiDAR and predicted LiDAR.}
-	\label{depth}
+	\label{v2_results}
 \end{figure}
+\newpage
 \subsection{Metric Depth to LIDAR}
 
 In this approach, precise metric depth measurements were used to predict LIDAR intensity. This method significantly outperformed predictions based solely on RGB or depth maps, showcasing the effectiveness of metric depth information in enhancing LIDAR intensity predictions.
@@ -131,9 +133,9 @@ In this approach, precise metric depth measurements were used to predict LIDAR i
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/metricv2/lidar/0000000070.png}
 	\includegraphics[width=0.5\textwidth]{abb/singleruns/metricv2/result/0000000070.png}
 	\caption{Metricdepth LiDAR and predicted LiDAR.}
-	\label{depth}
+	\label{metric_results}
 \end{figure}
-
+\newpage	
 \subsection{RGB plus BP Net to LIDAR}
 In this setup, RGB images were combined with depth maps generated by the BP Net model to predict LIDAR intensity. The integration of depth information from BP Net significantly improved the prediction accuracy compared to using RGB images alone. This method demonstrated enhanced performance across all evaluation metrics.
 \begin{figure}[!ht]
@@ -143,7 +145,7 @@ In this setup, RGB images were combined with depth maps generated by the BP Net 
 		\centering
 		\includegraphics[width=\linewidth]{abb/plusdepthruns/bp/rgb/0000000069.png}
 		\caption{RGB Image}
-		\label{fig:bp_rgb}
+		\label{bp_rgbd1}
 	\end{subfigure}
 	
 	\vspace{1em} % Vertikaler Abstand zwischen den Bildern
@@ -153,7 +155,7 @@ In this setup, RGB images were combined with depth maps generated by the BP Net 
 		\centering
 		\includegraphics[width=\linewidth]{abb/plusdepthruns/bp/depth/0000000069.png}
 		\caption{Depth Map}
-		\label{fig:bp_depth}
+		\label{bp_rgbd2}
 	\end{subfigure}
 	
 	\vspace{1em} % Vertikaler Abstand zwischen den oberen und unteren Bildern
@@ -174,9 +176,9 @@ In this setup, RGB images were combined with depth maps generated by the BP Net 
 	\end{subfigure}
 	
 	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the BP Net setup.}
-	\label{fig:bpplusdepth}
+	\label{bp_rgbd}
 \end{figure}
-
+\newpage
 \subsection{RGB plus Depth Anything v1 to LIDAR}
 Combining RGB images with depth maps from Depth Anything v1, the model achieved better performance than using RGB or depth alone. The fusion of RGB and depth data provided a more comprehensive input, resulting in improved LIDAR intensity predictions.
 \begin{figure}[!ht]
@@ -217,9 +219,9 @@ Combining RGB images with depth maps from Depth Anything v1, the model achieved 
 	\end{subfigure}
 	
 	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the Depth Anything v1 setup.}
-	\label{fig:v1plusdepth}
+	\label{v1_rgbd}
 \end{figure}
-
+\newpage
 \subsection{RGB plus Depth Anything v2 to LIDAR}
 With RGB images paired with depth maps from Depth Anything v2, the model achieved the highest performance among all setups. Depth Anything v2’s enhanced depth predictions, combined with RGB data, resulted in highly accurate LIDAR intensity predictions.
 \begin{figure}[!ht]
@@ -256,11 +258,11 @@ With RGB images paired with depth maps from Depth Anything v2, the model achieve
 		\centering
 		\includegraphics[width=\linewidth]{abb/plusdepthruns/v2/result/0000000070_fake_B.png}
 		\caption{Predicted LiDAR}
-		\label{fig:v2_fake_lidar}
+		\label{v2}
 	\end{subfigure}
 	
 	\caption{RGB, Depth, Predicted LiDAR, and Predicted LiDAR images for the Depth Anything v2 setup.}
-	\label{fig:v2plusdepth}
+	\label{v2_rgbd}
 \end{figure}
 \subsection{RGB plus Metric Depth to LIDAR}
 
@@ -305,7 +307,7 @@ The combination of RGB images with precise metric depth measurements led to the 
 	\end{subfigure}
 	
 	\caption{RGB Depthanything metric LiDAR and predicted LiDAR.}
-	\label{bpplusv2}
+	\label{metric_rgbd}
 \end{figure}
 \chapter{Conclusion}
 The approches with the rgb and depth only result in bad prediction. the bp 
@@ -321,7 +323,7 @@ The model trained using only RGB images to predict LIDAR intensity was evaluated
 	\includegraphics[width=0.3\textwidth]{abb/singleruns/rgb/lidar/0000000030.png}
 	\scalebox{2}[0.5]{\includegraphics[width=0.3\textwidth]{abb/singleruns/rgb/result/0000000070.png}}
 	\caption{RGB LiDAR and predicted LiDAR.}
-	\label{depth}
+	\label{rgb}
 \end{figure}
 
 
