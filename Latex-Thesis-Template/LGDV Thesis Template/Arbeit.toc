@@ -19,7 +19,6 @@
 \contentsline {subsection}{\numberline {2.3.6}RGB plus Depth Anything v1 to LiDAR}{12}{subsection.2.3.6}%
 \contentsline {subsection}{\numberline {2.3.7}RGB plus Depth Anything v2 to LiDAR}{13}{subsection.2.3.7}%
 \contentsline {subsection}{\numberline {2.3.8}RGB plus Metric Depth to LiDAR}{13}{subsection.2.3.8}%
-\contentsline {chapter}{\numberline {3}Conclusion}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Appendix}{16}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}RGB to LiDAR}{16}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}References}{16}{section.3.2}%
+\contentsline {chapter}{\numberline {3}Conclusion}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Appendix}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}RGB to LiDAR}{15}{subsection.3.1.1}%
